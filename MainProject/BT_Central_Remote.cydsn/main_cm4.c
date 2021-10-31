@@ -35,21 +35,15 @@ of this central device.
 int main(void)
 {
     __enable_irq(); /* Enable global interrupts. */
-
-    UART_Start();
+    
+    startUpInfo();
 
     Cy_GPIO_Set(GREEN_PORT,GREEN_NUM);
     Cy_GPIO_Clr(RED_PORT,RED_NUM);
-    CyDelay(10); 
     
     systemInputMode = xEventGroupCreate();
     xEventGroupSetBits(systemInputMode,MODE_CAPSENSE);
     
-    serialPrint("\x1b[2J\x1b[;H");
-    serialPrint("System Init Done.");
-    serialPrint( "====================================="); 
-    serialPrintf("==== BLE CENTRAL REMOTE v%d.%d.%d ====",MAJOR_VERSION,MINOR_VERSION,PATCH_VERSION); 
-    serialPrint( "====================================="); 
     setvbuf(stdin,0,_IONBF,0);
     
     /* BLE Central Task for communicating motor position to BLE peripheral*/
@@ -66,6 +60,35 @@ int main(void)
     vTaskStartScheduler();
     
     for(;;);
+}
+
+
+void startUpInfo()
+{
+    const char build_date[] = __DATE__;
+    const char build_time[] = __TIME__;
+    
+    UART_Start();
+    CyDelay(10);
+    serialPrint("\x1b[2J\x1b[;H");
+    
+    serialPrintf("BUILD DATE : %s",build_date);
+    serialPrintf("BUILD TIME : %s",build_time);
+    char pjtName[50];
+    sprintf(pjtName,"======== %s v%d.%d.%d ========",PROJECT_NAME,MAJOR_VERSION,MINOR_VERSION,PATCH_VERSION); 
+   
+    seralPrinter("[ UART ] : ");
+    for(int i = 0; pjtName[i] ; i++)
+    seralPrinter("=");
+    seralPrinter("\r\n");
+    
+    serialPrint(pjtName);
+    
+    seralPrinter("[ UART ] : ");
+    for(int i = 0; pjtName[i] ; i++)
+    seralPrinter("=");
+    seralPrinter("\r\n");
+    
 }
 
 /* [] END OF FILE */

@@ -55,7 +55,6 @@
 #define PATCH_VERSION   0
 
 #define PROJECT_NAME    "BLE PERIPHERAL CONTROLLER"
-const char pjtName[] = "======= BLE PERIPHERAL CONTROLLER v%d.%d.%d=========";
 
 //Should be called in the highest priority task
 #define UART_HIGH_START() UART_Start();CyDelay(10);serialPrint("\x1b[2J\x1b[;H");

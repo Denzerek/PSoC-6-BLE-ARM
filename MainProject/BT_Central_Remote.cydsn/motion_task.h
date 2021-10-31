@@ -15,6 +15,10 @@
 
 
 
+#define motion_printer(x)       TRANSMITTER("[ MOTION ] : ");TRANSMITTER(x);
+#define motion_print(x)         TRANSMITTER("[ MOTION ] : ");TRANSMITTER(x);TRANSMITTER("\r\n");
+#define motion_printf(x,...)    TRANSMITTER("[ MOTION ] : ");TRANSMITTER(x,__VA_ARGS__);TRANSMITTER("\r\n");
+
 
 void motionTask(void* arg);
 /* [] END OF FILE */

@@ -17,10 +17,9 @@ void capsenseTask(void *arg)
 {
     (void) arg;
     
+    static uint8_t bleConnectionCounter ;
     motors_t currentMotor = M1;
     static uint8_t pressReleased = true;
-    
-    
     
     CapSense_Start();
     CapSense_ScanAllWidgets();
@@ -39,8 +38,19 @@ void capsenseTask(void *arg)
             {
                 
                 if(bleConnectionState())
-                writeMotorPosition(currentMotor,POS_ABSOLUTE,pos);
-                cap_printf("Motor M%d : %%%d",currentMotor+1,pos);
+                {
+                    writeMotorPosition(currentMotor,POS_ABSOLUTE,pos);
+                    cap_printf("Motor M%d : %%%d",currentMotor+1,pos);
+                }
+                else 
+                {
+                    if(bleConnectionCounter > 4)
+                    {
+                        cap_print("BLE Not Connected");
+                        bleConnectionCounter = 0;
+                    }
+                    bleConnectionCounter++;
+                }
             }
             
             if(CapSense_IsWidgetActive(CapSense_BUTTON0_WDGT_ID))

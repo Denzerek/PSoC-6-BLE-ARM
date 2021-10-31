@@ -28,11 +28,18 @@ EventGroupHandle_t pwmEventGroup;
 
 void startUpInfo()
 {
-    UART_HIGH_START();
+    const char build_date[] = __DATE__;
+    const char build_time[] = __TIME__;
     
-    char* pjtName;
-    sprintf(pjtName,"======= BLE PERIPHERAL CONTROLLER v%d.%d.%d=========",MAJOR_VERSION,MINOR_VERSION,PATCH_VERSION); 
+    UART_Start();
+    CyDelay(10);
+    serialPrint("\x1b[2J\x1b[;H");
     
+    serialPrintf("BUILD DATE : %s",build_date);
+    serialPrintf("BUILD TIME : %s",build_time);
+    char pjtName[50];
+    sprintf(pjtName,"======== %s v%d.%d.%d ========",PROJECT_NAME,MAJOR_VERSION,MINOR_VERSION,PATCH_VERSION); 
+   
     serialPrinter("[ UART ] : ");
     for(int i = 0; pjtName[i] ; i++)
     serialPrinter("=");

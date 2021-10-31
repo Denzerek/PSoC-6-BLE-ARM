@@ -36,7 +36,6 @@ void UartTask(void * arg)
 {
     (void) arg;
     setvbuf(stdin,NULL,_IONBF,0);
-    UART_HIGH_START();
     
     /* \x1b[2J\x1b[;H - ANSI ESC sequence for clear screen */
     serialPrint("UART TASK Started ... ");

@@ -127,8 +127,8 @@ static void bmi160Init(void)
 void motionTask(void *arg)
 {
     (void) arg;
-    serialPrint("\x1b[2J\x1b[;H");
-    serialPrint("Starting Motion TASK");
+    static uint8_t bleConnectionCounter;
+    motion_print("Starting Motion TASK");
     I2C_1_Start();
     
     TickType_t lastMovement = 0;
@@ -137,11 +137,24 @@ void motionTask(void *arg)
     struct bmi160_sensor_data acc;
     
     float gx,gy,gz;
-    double m1 ,m2,m1Prev = 0,m2Prev = 0;
-    lastMovement = xTaskGetTickCount() + 2000;
+    double m1 = 50 ,m2 = 50 ,m1Prev = 0,m2Prev = 0;
+    lastMovement = xTaskGetTickCount() + 5000;
     
     while(1)
     {
+        
+        if(!bleConnectionState())
+        {
+            if(bleConnectionCounter > 100)
+            {
+                motion_print("BLE Not Connected");
+                bleConnectionCounter = 0;
+            }
+            bleConnectionCounter++;
+            vTaskDelay(30);
+            continue;
+        }
+        
         bmi160_get_sensor_data(BMI160_ACCEL_ONLY,&acc,NULL,&bmi160Dev);
         
         gx = (float)acc.x/MAXACCEL;
@@ -183,7 +196,7 @@ void motionTask(void *arg)
             {
                 if(m1 > 100 ) m1 = 100;if(m1<0)m1 = 0;
                 
-                if(bleConnectionState())
+                //if(bleConnectionState())
                 writeMotorPosition(M1,POS_ABSOLUTE,(int)m1);
                 m1Prev = m1;
                 //serialPrintf("M1 %%%d\tM2 %%%d",m1,m2);
@@ -192,12 +205,12 @@ void motionTask(void *arg)
             {
                 if(m2 > 100 ) m2 = 100;if(m2<0)m2 = 0;
                 
-                if(bleConnectionState())
+                //if(bleConnectionState())
                 writeMotorPosition(M2,POS_ABSOLUTE,(int)m2);
                 m2Prev = m2;
             }
             
-                serialPrintf("M1 %%%d\tM2 %%%d",(int)m1,(int)m2);
+                motion_printf("M1 %%%d\tM2 %%%d",(int)m1,(int)m2);
                 
             xEventGroupSetBits(systemInputMode,MODE_CAPSENSE);
                 vTaskDelay(50);
