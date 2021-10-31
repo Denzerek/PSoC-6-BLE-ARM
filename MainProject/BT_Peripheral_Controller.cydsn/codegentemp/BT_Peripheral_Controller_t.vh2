@@ -1,5 +1,5 @@
 -- Project:   C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Peripheral_Controller.cydsn\BT_Peripheral_Controller.cyprj
--- Generated: 10/31/2021 12:35:42
+-- Generated: 10/31/2021 18:39:26
 -- PSoC Creator  4.4
 
 ENTITY BT_Peripheral_Controller IS

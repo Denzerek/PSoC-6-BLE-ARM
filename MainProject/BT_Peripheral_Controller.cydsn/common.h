@@ -22,15 +22,43 @@
 #define SUPER_TRANSMITTER   printf
 //#define TRANSMITTER 
 
-#define serialPrint(x)  { SUPER_TRANSMITTER("[ UART ] : ");SUPER_TRANSMITTER(x);SUPER_TRANSMITTER("\r\n");}
-#define serialPrintf(x,...)  { SUPER_TRANSMITTER("[ UART ] : ");SUPER_TRANSMITTER(x,__VA_ARGS__);SUPER_TRANSMITTER("\r\n");}
+#define serialPrint(x)          { SUPER_TRANSMITTER("[ UART ] : ");SUPER_TRANSMITTER(x);SUPER_TRANSMITTER("\r\n");}
+#define serialPrintf(x,...)     { SUPER_TRANSMITTER("[ UART ] : ");SUPER_TRANSMITTER(x,__VA_ARGS__);SUPER_TRANSMITTER("\r\n");}
+#define serialPrinter(x)        SUPER_TRANSMITTER(x)
 
 
-#define PJT_NAME    "   MAIN CONTROLLER   " 
+
+#define UART_TASK_STACK_SIZE                400
+#define UART_TASK_PRIORITY                  2
+
+#define CAPSENSE_TASK_STACK_SIZE            2*1024
+#define CAPSENSE_TASK_PRIORITY              2
+
+#define BLE_TASK_STACK_SIZE                 4*1024
+#define BLE_TASK_PRIORITY                   1
+
+#define MOTOR_TASK_STACK_SIZE               400
+#define MOTOR_TASK_PRIORITY                 2
+
+#define PWM_TASK_STACK_SIZE                 400
+#define PWM_TASK_PRIORITY                   1
+
+#define EZI2C_TASK_STACK_SIZE               400
+#define EZI2C_TASK_PRIORITY                 2
+
+#define ARDUINO_COMM_TASK_STACK_SIZE        400
+#define ARDUINO_COMM_TASK_PRIORITY          2
+
+
+#define MAJOR_VERSION   1   
+#define MINOR_VERSION   0
+#define PATCH_VERSION   0
+
+#define PROJECT_NAME    "BLE PERIPHERAL CONTROLLER"
+const char pjtName[] = "======= BLE PERIPHERAL CONTROLLER v%d.%d.%d=========";
 
 //Should be called in the highest priority task
-#define UART_HIGH_START() UART_Start();serialPrint("\x1b[2J\x1b[;H");
-
+#define UART_HIGH_START() UART_Start();CyDelay(10);serialPrint("\x1b[2J\x1b[;H");
 
 //Should be called in the lowest priority task
 #define START_UP_DISP()   { serialPrint("System Init Done.");\
@@ -39,7 +67,13 @@
                             serialPrint("======================================"); \
                         }
                             
-                        
+
+
+
+
+
+
+
 extern QueueHandle_t servoControlQueue;
 extern QueueHandle_t pwmQueue;
                         

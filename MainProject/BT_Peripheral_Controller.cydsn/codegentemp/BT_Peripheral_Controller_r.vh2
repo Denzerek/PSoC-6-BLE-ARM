@@ -1,5 +1,5 @@
 -- Project:   BT_Peripheral_Controller
--- Generated: 10/31/2021 12:35:32
+-- Generated: 10/31/2021 18:39:16
 -- PSoC Creator  4.4
 
 ENTITY BT_Peripheral_Controller IS

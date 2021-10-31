@@ -20,36 +20,39 @@
 #include "ble_task.h"
 
 
-
-#define UART_TASK_STACK_SIZE        400
-#define UART_TASK_PRIORITY          2
-
-#define CAPSENSE_TASK_STACK_SIZE         2*1024
-#define CAPSENSE_TASK_PRIORITY           2
-
-#define BLE_TASK_STACK_SIZE         4*1024
-#define BLE_TASK_PRIORITY           1
-
-#define MOTOR_TASK_STACK_SIZE       400
-#define MOTOR_TASK_PRIORITY         2
-
-#define PWM_TASK_STACK_SIZE         400
-#define PWM_TASK_PRIORITY           1
-
-#define EZI2C_TASK_STACK_SIZE         400
-#define EZI2C_TASK_PRIORITY           2
-
-#define ARDUINO_COMM_TASK_STACK_SIZE    400
-#define ARDUINO_COMM_TASK_PRIORITY      2
-
 QueueHandle_t pwmQueue;
 QueueHandle_t servoControlQueue;
 EventGroupHandle_t pwmEventGroup;
 
 
+
+void startUpInfo()
+{
+    UART_HIGH_START();
+    
+    char* pjtName;
+    sprintf(pjtName,"======= BLE PERIPHERAL CONTROLLER v%d.%d.%d=========",MAJOR_VERSION,MINOR_VERSION,PATCH_VERSION); 
+    
+    serialPrinter("[ UART ] : ");
+    for(int i = 0; pjtName[i] ; i++)
+    serialPrinter("=");
+    serialPrinter("\r\n");
+    
+    serialPrint(pjtName);
+    
+    serialPrinter("[ UART ] : ");
+    for(int i = 0; pjtName[i] ; i++)
+    serialPrinter("=");
+    serialPrinter("\r\n");
+    
+}
+
+
 int main(void)
 {
     __enable_irq(); /* Enable global interrupts. */
+    
+    startUpInfo();
     
     pwmQueue = xQueueCreate(4,sizeof(PWM_Message_t));
     servoControlQueue = xQueueCreate(4,sizeof(PWM_Message_t));

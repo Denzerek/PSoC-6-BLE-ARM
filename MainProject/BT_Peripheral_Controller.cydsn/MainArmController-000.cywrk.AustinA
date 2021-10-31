@@ -18,31 +18,61 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files\capsense_task.c">
 <ExpandedNodeIds>
 <v>MainArmController-000</v>
 <v>MainArmController-000\BT_Central_Remote</v>
 <v>MainArmController-000\BT_Central_Remote\TopDesign</v>
-<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)</v>
-<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files</v>
-<v>MainArmController-000\BT_Peripheral_Controller\TopDesign</v>
-</ExpandedNodeIds>
-<VisibleNodeIds>
-<v>MainArmController-000</v>
-<v>MainArmController-000\BT_Central_Remote</v>
-<v>MainArmController-000\BT_Central_Remote\TopDesign</v>
 <v>MainArmController-000\BT_Central_Remote\BT_Central_Remote.cydwr</v>
+<v>MainArmController-000\BT_Central_Remote\BT_Central_Remote.cydwr\Pins</v>
+<v>MainArmController-000\BT_Central_Remote\BT_Central_Remote.cydwr\Analog</v>
+<v>MainArmController-000\BT_Central_Remote\BT_Central_Remote.cydwr\DMA</v>
+<v>MainArmController-000\BT_Central_Remote\BT_Central_Remote.cydwr\Clocks</v>
+<v>MainArmController-000\BT_Central_Remote\BT_Central_Remote.cydwr\Interrupts</v>
+<v>MainArmController-000\BT_Central_Remote\BT_Central_Remote.cydwr\System</v>
+<v>MainArmController-000\BT_Central_Remote\BT_Central_Remote.cydwr\Directives</v>
 <v>MainArmController-000\BT_Central_Remote\CM0p (Core 0)</v>
+<v>MainArmController-000\BT_Central_Remote\CM0p (Core 0)\ARM GCC Generic</v>
+<v>MainArmController-000\BT_Central_Remote\CM0p (Core 0)\ARM GCC Generic\cy8c6xx7_cm0plus.ld</v>
+<v>MainArmController-000\BT_Central_Remote\CM0p (Core 0)\ARM IAR Generic</v>
+<v>MainArmController-000\BT_Central_Remote\CM0p (Core 0)\ARM IAR Generic\cy8c6xx7_cm0plus.icf</v>
+<v>MainArmController-000\BT_Central_Remote\CM0p (Core 0)\ARM MDK Generic</v>
+<v>MainArmController-000\BT_Central_Remote\CM0p (Core 0)\ARM MDK Generic\cy8c6xx7_cm0plus.scat</v>
+<v>MainArmController-000\BT_Central_Remote\CM0p (Core 0)\Header Files</v>
+<v>MainArmController-000\BT_Central_Remote\CM0p (Core 0)\Source Files</v>
+<v>MainArmController-000\BT_Central_Remote\CM0p (Core 0)\Source Files\ARM GCC Generic</v>
+<v>MainArmController-000\BT_Central_Remote\CM0p (Core 0)\Source Files\ARM GCC Generic\startup_psoc6_01_cm0plus.S</v>
+<v>MainArmController-000\BT_Central_Remote\CM0p (Core 0)\Source Files\ARM IAR Generic</v>
+<v>MainArmController-000\BT_Central_Remote\CM0p (Core 0)\Source Files\ARM IAR Generic\startup_psoc6_01_cm0plus.s</v>
+<v>MainArmController-000\BT_Central_Remote\CM0p (Core 0)\Source Files\ARM MDK Generic</v>
+<v>MainArmController-000\BT_Central_Remote\CM0p (Core 0)\Source Files\ARM MDK Generic\startup_psoc6_01_cm0plus.s</v>
+<v>MainArmController-000\BT_Central_Remote\CM0p (Core 0)\Source Files\main_cm0p.c</v>
+<v>MainArmController-000\BT_Central_Remote\CM0p (Core 0)\Source Files\system_psoc6_cm0plus.c</v>
 <v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)</v>
 <v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\ARM GCC Generic</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\ARM GCC Generic\cy8c6xx7_cm4_dual.ld</v>
 <v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\ARM IAR Generic</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\ARM IAR Generic\cy8c6xx7_cm4_dual.icf</v>
 <v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\ARM MDK Generic</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\ARM MDK Generic\cy8c6xx7_cm4_dual.scat</v>
 <v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Header Files</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Header Files\ble_task.h</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Header Files\capsense_task.h</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Header Files\common.h</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Header Files\FreeRTOSConfig.h</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Header Files\motion_task.h</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Header Files\uart_task.h</v>
 <v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\IMU_BMI160</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\IMU_BMI160\bmi160.c</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\IMU_BMI160\bmi160.h</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\IMU_BMI160\bmi160_defs.h</v>
 <v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files</v>
 <v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files\ARM GCC Generic</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files\ARM GCC Generic\startup_psoc6_01_cm4.S</v>
 <v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files\ARM IAR Generic</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files\ARM IAR Generic\startup_psoc6_01_cm4.s</v>
 <v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files\ARM MDK Generic</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files\ARM MDK Generic\startup_psoc6_01_cm4.s</v>
 <v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files\ble_task.c</v>
 <v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files\capsense_task.c</v>
 <v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files\main_cm4.c</v>
@@ -50,8 +80,112 @@
 <v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files\system_psoc6_cm4.c</v>
 <v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files\uart_task.c</v>
 <v>MainArmController-000\BT_Central_Remote\Shared Files</v>
+<v>MainArmController-000\BT_Central_Remote\Shared Files\cy_ble_config.h</v>
+<v>MainArmController-000\BT_Central_Remote\Shared Files\cyapicallbacks.h</v>
+<v>MainArmController-000\BT_Central_Remote\Shared Files\stdio_user.c</v>
+<v>MainArmController-000\BT_Central_Remote\Shared Files\stdio_user.h</v>
+<v>MainArmController-000\BT_Central_Remote\Shared Files\system_psoc6.h</v>
 <v>MainArmController-000\BT_Central_Remote\Generated_Source</v>
-<v>MainArmController-000\BT_Peripheral_Controller</v>
+<v>MainArmController-000\BT_Central_Remote\Generated_Source\PSoC6</v>
+<v>MainArmController-000\BT_Peripheral_Controller\TopDesign</v>
+<v>MainArmController-000\BT_Peripheral_Controller\BT_Peripheral_Controller.cydwr</v>
+<v>MainArmController-000\BT_Peripheral_Controller\BT_Peripheral_Controller.cydwr\Pins</v>
+<v>MainArmController-000\BT_Peripheral_Controller\BT_Peripheral_Controller.cydwr\Analog</v>
+<v>MainArmController-000\BT_Peripheral_Controller\BT_Peripheral_Controller.cydwr\DMA</v>
+<v>MainArmController-000\BT_Peripheral_Controller\BT_Peripheral_Controller.cydwr\Clocks</v>
+<v>MainArmController-000\BT_Peripheral_Controller\BT_Peripheral_Controller.cydwr\Interrupts</v>
+<v>MainArmController-000\BT_Peripheral_Controller\BT_Peripheral_Controller.cydwr\System</v>
+<v>MainArmController-000\BT_Peripheral_Controller\BT_Peripheral_Controller.cydwr\Directives</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM0p (Core 0)</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM0p (Core 0)\ARM GCC Generic</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM0p (Core 0)\ARM GCC Generic\cy8c6xx7_cm0plus.ld</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM0p (Core 0)\ARM IAR Generic</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM0p (Core 0)\ARM IAR Generic\cy8c6xx7_cm0plus.icf</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM0p (Core 0)\ARM MDK Generic</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM0p (Core 0)\ARM MDK Generic\cy8c6xx7_cm0plus.scat</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM0p (Core 0)\Header Files</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM0p (Core 0)\Source Files</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM0p (Core 0)\Source Files\ARM GCC Generic</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM0p (Core 0)\Source Files\ARM GCC Generic\startup_psoc6_01_cm0plus.S</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM0p (Core 0)\Source Files\ARM IAR Generic</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM0p (Core 0)\Source Files\ARM IAR Generic\startup_psoc6_01_cm0plus.s</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM0p (Core 0)\Source Files\ARM MDK Generic</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM0p (Core 0)\Source Files\ARM MDK Generic\startup_psoc6_01_cm0plus.s</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM0p (Core 0)\Source Files\main_cm0p.c</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM0p (Core 0)\Source Files\system_psoc6_cm0plus.c</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\ARM GCC Generic</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\ARM GCC Generic\cy8c6xx7_cm4_dual.ld</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\ARM IAR Generic</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\ARM IAR Generic\cy8c6xx7_cm4_dual.icf</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\ARM MDK Generic</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\ARM MDK Generic\cy8c6xx7_cm4_dual.scat</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files\ble_task.h</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files\capsense_task.h</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files\common.h</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files\ezI2C_task.h</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files\FreeRTOSConfig.h</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files\motor_task.h</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files\pwm_task.h</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files\servo_slave_i2c_task.h</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files\uart_task.h</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\ARM GCC Generic</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\ARM GCC Generic\startup_psoc6_01_cm4.S</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\ARM IAR Generic</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\ARM IAR Generic\startup_psoc6_01_cm4.s</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\ARM MDK Generic</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\ARM MDK Generic\startup_psoc6_01_cm4.s</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\ble_task.c</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\capsense_task.c</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\ezI2C_task.c</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\main_cm4.c</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\motor_task.c</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\pwm_task.c</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\servo_slave_i2c_task.c</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\system_psoc6_cm4.c</v>
+<v>MainArmController-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\uart_task.c</v>
+<v>MainArmController-000\BT_Peripheral_Controller\Shared Files</v>
+<v>MainArmController-000\BT_Peripheral_Controller\Shared Files\cy_ble_config.h</v>
+<v>MainArmController-000\BT_Peripheral_Controller\Shared Files\cyapicallbacks.h</v>
+<v>MainArmController-000\BT_Peripheral_Controller\Shared Files\stdio_user.c</v>
+<v>MainArmController-000\BT_Peripheral_Controller\Shared Files\stdio_user.h</v>
+<v>MainArmController-000\BT_Peripheral_Controller\Shared Files\system_psoc6.h</v>
+<v>MainArmController-000\BT_Peripheral_Controller\Generated_Source</v>
+<v>MainArmController-000\BT_Peripheral_Controller\Generated_Source\PSoC6</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\IMU_BMI160\bmi160.c</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\IMU_BMI160\bmi160.h</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\IMU_BMI160\bmi160_defs.h</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files\ARM GCC Generic</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files\ARM GCC Generic\startup_psoc6_01_cm4.S</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files\ARM IAR Generic</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files\ARM IAR Generic\startup_psoc6_01_cm4.s</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files\ARM MDK Generic</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files\ARM MDK Generic\startup_psoc6_01_cm4.s</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files\ble_task.c</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files\capsense_task.c</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files\main_cm4.c</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files\motion_task.c</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files\system_psoc6_cm4.c</v>
+<v>MainArmController-000\BT_Central_Remote\CM4 (Core 1)\Source Files\uart_task.c</v>
+<v>MainArmController-000\BT_Central_Remote\Shared Files</v>
+<v>MainArmController-000\BT_Central_Remote\Shared Files\cy_ble_config.h</v>
+<v>MainArmController-000\BT_Central_Remote\Shared Files\cyapicallbacks.h</v>
+<v>MainArmController-000\BT_Central_Remote\Shared Files\stdio_user.c</v>
+<v>MainArmController-000\BT_Central_Remote\Shared Files\stdio_user.h</v>
+<v>MainArmController-000\BT_Central_Remote\Shared Files\system_psoc6.h</v>
+<v>MainArmController-000\BT_Central_Remote\Generated_Source</v>
+<v>MainArmController-000\BT_Central_Remote\Generated_Source\PSoC6</v>
+<v>MainArmController-000\BT_Central_Remote\Generated_Source\PSoC6\pdl</v>
+<v>MainArmController-000\BT_Central_Remote\Generated_Source\PSoC6\BLE_1</v>
+<v>MainArmController-000\BT_Central_Remote\Generated_Source\PSoC6\CapSense</v>
+<v>MainArmController-000\BT_Central_Remote\Generated_Source\PSoC6\CapSense_ModClk</v>
+<v>MainArmController-000\BT_Central_Remote\Generated_Source\PSoC6\I2C_1</v>
+<v>MainArmController-000\BT_Central_Remote\Generated_Source\PSoC6\I2C_1_SCBCLK</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -613,7 +747,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="916, 595" SelectedTabbedMdiWindow="9f0da9a4-6fc1-4842-8f78-a0c55cdf0e7d"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="9f0da9a4-6fc1-4842-8f78-a0c55cdf0e7d" /><ToolWindow Key="Output Window Plugin:7305390e-eabe-4963-b21f-3a0f11b4b1d5:Output Window" Guid="73de7761-3dbb-47a0-9a93-9d6338c3a45f" /><ToolWindow Key="CyNoticeWindow:44d3d453-9474-4f2b-b928-4356f496bef0:Notice Window" Guid="03a3c053-f83a-4e52-80fe-5c69f4f00d6c" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="911, 595" SelectedTabbedMdiWindow="9f0da9a4-6fc1-4842-8f78-a0c55cdf0e7d"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="9f0da9a4-6fc1-4842-8f78-a0c55cdf0e7d" /><ToolWindow Key="Output Window Plugin:7305390e-eabe-4963-b21f-3a0f11b4b1d5:Output Window" Guid="73de7761-3dbb-47a0-9a93-9d6338c3a45f" /><ToolWindow Key="CyNoticeWindow:44d3d453-9474-4f2b-b928-4356f496bef0:Notice Window" Guid="03a3c053-f83a-4e52-80fe-5c69f4f00d6c" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
