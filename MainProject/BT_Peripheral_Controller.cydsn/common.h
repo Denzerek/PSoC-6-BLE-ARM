@@ -60,20 +60,6 @@ const char pjtName[] = "======= BLE PERIPHERAL CONTROLLER v%d.%d.%d=========";
 //Should be called in the highest priority task
 #define UART_HIGH_START() UART_Start();CyDelay(10);serialPrint("\x1b[2J\x1b[;H");
 
-//Should be called in the lowest priority task
-#define START_UP_DISP()   { serialPrint("System Init Done.");\
-                            serialPrint("======================================"); \
-                            serialPrintf("=======%s=========",PJT_NAME); \
-                            serialPrint("======================================"); \
-                        }
-                            
-
-
-
-
-
-
-
 extern QueueHandle_t servoControlQueue;
 extern QueueHandle_t pwmQueue;
                         

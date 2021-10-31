@@ -1,6 +1,6 @@
 (DELAYFILE
  (SDFVERSION "IEEE 1497 4.0")
- (DATE "2021-10-31T13:09:26Z")
+ (DATE "2021-10-31T13:29:42Z")
  (DESIGN "BT_Peripheral_Controller")
  (VENDOR "Cypress Semiconductor")
  (PROGRAM "PSoC Creator")

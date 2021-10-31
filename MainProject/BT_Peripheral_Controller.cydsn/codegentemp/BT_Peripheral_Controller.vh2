@@ -2,7 +2,7 @@
 --	Conversion of BT_Peripheral_Controller.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Sun Oct 31 18:39:06 2021
+--	Sun Oct 31 18:59:23 2021
 --
 
 USE cypress.cypress.all;

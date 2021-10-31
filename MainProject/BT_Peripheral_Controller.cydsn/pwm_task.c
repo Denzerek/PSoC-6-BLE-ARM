@@ -26,8 +26,6 @@ void pwmTask(void * arg)
     pwm_print("Kill Switch LEDs Started ...");
     Cy_TCPWM_PWM_SetCompare0(Dimmer_HW,Dimmer_CNT_NUM,95);
     
-    /* Startup message display*/
-    START_UP_DISP();
     
     
     for(;;)
