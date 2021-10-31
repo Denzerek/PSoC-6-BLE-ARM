@@ -171,7 +171,8 @@ void loop() {
       
     }
   }
-
+  
+#ifdef MOTOR_DEBUG_ENABLE
 if (Serial.available() ) {
     //servos[MOTOR_ARM].target = Serial.parseInt();
     //servos[MOTOR_FOREARM].target = servos[MOTOR_ARM].target;
@@ -179,7 +180,7 @@ if (Serial.available() ) {
     servos[MOTOR_HORIZ].target = Serial.parseInt();
     Serial.read();
   }
-
+#endif
   positionMotors();
   
 }
