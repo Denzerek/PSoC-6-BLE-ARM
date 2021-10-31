@@ -19,7 +19,7 @@
 #include "servo_slave_i2c_task.h"
 #include "ble_task.h"
 
- 
+  
 QueueHandle_t pwmQueue;
 QueueHandle_t servoControlQueue;
 EventGroupHandle_t pwmEventGroup;
