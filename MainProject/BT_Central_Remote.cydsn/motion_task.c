@@ -137,7 +137,7 @@ void motionTask(void *arg)
     struct bmi160_sensor_data acc;
     
     float gx,gy,gz;
-    double m1 ,m2,m1Prev,m2Prev;
+    double m1 ,m2,m1Prev = 0,m2Prev = 0;
     lastMovement = xTaskGetTickCount() + 2000;
     
     while(1)

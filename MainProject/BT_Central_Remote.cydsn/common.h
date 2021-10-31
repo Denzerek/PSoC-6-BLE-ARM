@@ -20,6 +20,11 @@
 #include "limits.h"
 #include "event_groups.h"
 
+#define MAJOR_VERSION   1   
+#define MINOR_VERSION   0
+#define PATCH_VERSION   0
+
+
 #define TRANSMITTER     printf
 
 #define MODE_MOTION     (1<<0)
@@ -28,6 +33,18 @@
 #define serialPrint(x)  { TRANSMITTER("[ UART ] : ");TRANSMITTER(x);TRANSMITTER("\r\n");}
 #define serialPrintf(x,...)  { TRANSMITTER("[ UART ] : ");TRANSMITTER(x,__VA_ARGS__);TRANSMITTER("\r\n");}
 #define seralPrinter(x,...) { TRANSMITTER("[ UART ] : ");sprintf(temp,x,__VA_ARGS__);TRANSMITTER(temp);TRANSMITTER("\r\n"); }
+
+#define UART_TASK_STACK_SIZE            1024
+#define UART_TASK_PRIORITY              2
+
+#define CAPSENSE_TASK_STACK_SIZE         1024
+#define CAPSENSE_TASK_PRIORITY           2
+
+#define MOTION_TASK_STACK_SIZE          1024
+#define MOTION_TASK_PRIORITY            2
+
+#define BLE_TASK_STACK_SIZE             8*1024
+#define BLE_TASK_PRIORITY               1
 
 extern EventGroupHandle_t systemInputMode;
 
