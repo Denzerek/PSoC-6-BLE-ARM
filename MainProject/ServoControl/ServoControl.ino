@@ -12,11 +12,15 @@
 //Uncomment to observe debug messages
 //#define MOTOR_DEBUG_ENABLE
 
+#define MAJOR_VERSION   1
+#define MINOR_VERSION   0
+#define PATCH_VERSION   0
+
 /*=========================
  * ADJUSTABLE parameters
  ==========================*/
 
-#define SERVO_SPEED             20
+#define SERVO_SPEED             5
 #define MOTOR_INITIAL_POSITION  90
 #define SLAVE_ADDRESS           0x08
 #define DEBUG_COM_BAUDRATE      115200
@@ -27,14 +31,14 @@
  *MOTOR Motion Limits 
  ===================*/
 #define MOTOR_FINGER                MOTOR_1       //pin 9
-#define MOTOR_FINGER_PIN            9
+#define MOTOR_FINGER_PIN            10
 #define MOTOR_FINGER_MAX_LIMIT      104
 #define MOTOR_FINGER_MIN_LIMIT      0
 #define MOTOR_FINGER_TARGET         servos[MOTOR_FINGER].target
 #define MOTOR_FINGER_SPEED          5
 
 #define MOTOR_FOREARM               MOTOR_2       //pin 10
-#define MOTOR_FOREARM_PIN           10
+#define MOTOR_FOREARM_PIN           9
 #define MOTOR_FOREARM_MAX_LIMIT     180
 #define MOTOR_FOREARM_MIN_LIMIT     0
 #define MOTOR_FOREARM_TARGET        servos[MOTOR_FOREARM].target
@@ -112,7 +116,10 @@ servo_s servos[MOTOR_MAX] = {
 char temp[100];
 char receptionBuffer[20];
 volatile uint8_t index = 0;
-volatile uint8_t motorFoundFlag = false,motorCtrlIndex = 0;               
+volatile uint8_t motorFoundFlag = false,motorCtrlIndex = 0;  
+
+const char compile_date[] = __DATE__;
+const char compile_time[] = __TIME__;             
 
 void setup() {
   
@@ -132,8 +139,13 @@ void setup() {
 
   
   servo_print("I2c Initialized");
+  sprintf(temp,"BUILD DATE : %s",compile_date);
+  servo_print(temp);
+  sprintf(temp,"BUILD TIME : %s",compile_time);
+  servo_print(temp);
   servo_print("==========================================");
-  servo_print("========== SERVO SLAVE ONLINE ============");
+  sprintf(temp,"========== SERVO SLAVE v%d.%d.%d ============",MAJOR_VERSION,MINOR_VERSION,PATCH_VERSION);
+  servo_print(temp);
   servo_print("==========================================");
 
   
@@ -171,13 +183,14 @@ void loop() {
       
     }
   }
-  
+
+//#if 1
 #ifdef MOTOR_DEBUG_ENABLE
 if (Serial.available() ) {
     //servos[MOTOR_ARM].target = Serial.parseInt();
     //servos[MOTOR_FOREARM].target = servos[MOTOR_ARM].target;
-    //servos[MOTOR_FINGER].target = servos[MOTOR_ARM].target;
-    servos[MOTOR_HORIZ].target = Serial.parseInt();
+    servos[MOTOR_FINGER].target = servos[MOTOR_ARM].target;
+    //servos[MOTOR_HORIZ].target = Serial.parseInt();
     Serial.read();
   }
 #endif
