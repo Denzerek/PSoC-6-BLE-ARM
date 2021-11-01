@@ -52,14 +52,14 @@ The following details the firmware used in this project (Can be found under the 
     - If there is not movement of this board for more thatn 3 seconds, then motion sensor is deactivated and capsense touch sensor will be active.
     - User can also send UART commands from a terminal application as well to change the position of each motor as a relative to its current position.
         The following commands can be sent via UART    
-            'o' - Move motor 1 by -10%
-            'p' - Move motor 1 by  10%
-            'k' - Move motor 2 by -10%
-            'l' - Move motor 2 by  10%
-            'n' - Move motor 3 by -10%
-            'm' - Move motor 3 by  10%
-            ',' - Move motor 4 by -10%
-            '.' - Move motor 4 by  10%
+            - 'o' - Move motor 1 by -10%
+            - 'p' - Move motor 1 by  10%
+            - 'k' - Move motor 2 by -10%
+            - 'l' - Move motor 2 by  10%
+            - 'n' - Move motor 3 by -10%
+            - 'm' - Move motor 3 by  10%
+            - ',' - Move motor 4 by -10%
+            - '.' - Move motor 4 by  10%
 
 2. BT_Peripheral_Controller.cydsn
     - Developed in PSoC Creator.
@@ -70,14 +70,14 @@ The following details the firmware used in this project (Can be found under the 
     - Capsense task is capable of changing the selected servo motor by clicking on the capsense buttons while the finger position on the slider will change the position of the selected servo motor.
     - User can also send UART commands from a terminal application as well to change the position of each motor as a relative to its current position.
         The following commands can be sent via UART    
-            'o' - Move motor 1 by -10%
-            'p' - Move motor 1 by  10%
-            'k' - Move motor 2 by -10%
-            'l' - Move motor 2 by  10%
-            'n' - Move motor 3 by -10%
-            'm' - Move motor 3 by  10%
-            ',' - Move motor 4 by -10%
-            '.' - Move motor 4 by  10%
+            - 'o' - Move motor 1 by -10%
+            - 'p' - Move motor 1 by  10%
+            - 'k' - Move motor 2 by -10%
+            - 'l' - Move motor 2 by  10%
+            - 'n' - Move motor 3 by -10%
+            - 'm' - Move motor 3 by  10%
+            - ',' - Move motor 4 by -10%
+            - '.' - Move motor 4 by  10%
 
 
 
