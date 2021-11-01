@@ -87,6 +87,14 @@ The following details the firmware used in this project (Can be found under the 
     - Uart display of motor positions enabled.
 
 
+# NOTES:
+1. The interface baord is a custom soldered PCB to power the 4 servo motors operating at 5 V.
+2. An SMPS (took one from and old PC I had) to get 5 V power for each of the 4 servo motors.
+3. Make sure the grounds of the SMPS and arduino and all servo motors are same  (else causes excessive jerking of servo motorsm causing the arm to go out of control and not respond to PWM signals from arduino)
+4. Do not power 4 servo motors from arduino (It cannot supply the necessary current and can result in motor heating).
+5. Do not use the same single 5V line for all 4 servo motors, This can cause excessive current to flow and heat and melt the wires. (Recommended : Use differetn 5 V lines for each servo (SMPS used in PCs has multiple 5V lines making this possible))
+
+
 
 
 
