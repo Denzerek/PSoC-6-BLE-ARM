@@ -44,22 +44,21 @@ The following details the firmware used in this project (Can be found under the 
 1. BT_Central_Remote.cydsn 
     - Developed in PSoC Creator.
     - To be loaded in the PSoC 6 BLE Pioneer Kit board that is to be used as the wireless remote
-    - Implements Bluetooth configured as central device for establishing connection to peripheral device based on compare match of service UUID.
+    - Implements Bluetooth configured as central device for establishing connection to peripheral device based on compare match of Motor service UUID.
     - Cannot be used as standalone.
     - Implements firmware for data acquisition from BMI160 motion sensor from Bosch (Onboard the E-Ink display that comes packaged along with the BLE Pioneer kit) and Capsense based touch sensors from Infineon (Onboard the BLE Pioneer kit)
     - FreeRTOS for syncing BLE write operation handles from the capsense and motion sensor applications.
     - Capsense task is capable of changing the selected servo motor by clicking on the capsense buttons while the finger position on the slider will change the position of the selected servo motor.
     - If there is not movement of this board for more thatn 3 seconds, then motion sensor is deactivated and capsense touch sensor will be active.
-    - User can also send UART commands from a terminal application as well to change the position of each motor as a relative to its current position.
-        The following commands can be sent via UART    
-            - 'o' - Move motor 1 by -10%
-            - 'p' - Move motor 1 by  10%
-            - 'k' - Move motor 2 by -10%
-            - 'l' - Move motor 2 by  10%
-            - 'n' - Move motor 3 by -10%
-            - 'm' - Move motor 3 by  10%
-            - ',' - Move motor 4 by -10%
-            - '.' - Move motor 4 by  10%
+    - User can also send UART commands from a terminal application as well to change the position of each motor as a relative to its current position.The following commands can be sent via UART    
+        - 'o' - Move motor 1 by -10%
+        - 'p' - Move motor 1 by  10%
+        - 'k' - Move motor 2 by -10%
+        - 'l' - Move motor 2 by  10%
+        - 'n' - Move motor 3 by -10%
+        - 'm' - Move motor 3 by  10%
+        - ',' - Move motor 4 by -10%
+        - '.' - Move motor 4 by  10%
 
 2. BT_Peripheral_Controller.cydsn
     - Developed in PSoC Creator.
@@ -77,6 +76,7 @@ The following details the firmware used in this project (Can be found under the 
         - 'm' - Move motor 3 by  10%
         - ',' - Move motor 4 by -10%
         - '.' - Move motor 4 by  10%
+    - I2C Command packet is designed as follows : `<motor_num>`0D
 
 
 
