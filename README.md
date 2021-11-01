@@ -76,7 +76,7 @@ The following details the firmware used in this project (Can be found under the 
         - 'm' - Move motor 3 by  10%
         - ',' - Move motor 4 by -10%
         - '.' - Move motor 4 by  10%
-    - I2C Command packet is designed as follows : `<motor_num>`0D
+    - I2C Command packet is designed as follows :  &lt;motor_num&gt;0D
 
 
 
