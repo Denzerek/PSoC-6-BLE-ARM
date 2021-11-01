@@ -65,7 +65,6 @@ The following details the firmware used in this project (Can be found under the 
     - To be loaded in the PSoC 6 BLE Pioneer Kit board that is to be used as the central controller for communicating with the Servo slave over I2C
     - Implements Bluetooth configured as a peripheral device for starting advertisement for the central device to detect and connect to.
     - This firmware can be used as a standalone one where the user can connect to the 'BLEArm' bluetooth advertisement from an android phone using the CySmart application and write the positions of each motor from the motor characteristics for each of the 4 motors.
-    - I2C Configured for 400Khz in master mode to send I2C commands to Arduino Slave.
     - Capsense task is capable of changing the selected servo motor by clicking on the capsense buttons while the finger position on the slider will change the position of the selected servo motor.
     - User can also send UART commands from a terminal application as well to change the position of each motor as a relative to its current position.The following commands can be sent via UART    
         - 'o' - Move motor 1 by -10%
@@ -76,7 +75,16 @@ The following details the firmware used in this project (Can be found under the 
         - 'm' - Move motor 3 by  10%
         - ',' - Move motor 4 by -10%
         - '.' - Move motor 4 by  10%
-    - I2C Command packet is designed as follows :  &lt;motor_num&gt;0D
+    - I2C Configured for 400Khz in master mode to send I2C commands to Arduino Slave.
+    - I2C Command packet is designed as follows :  &lt;command&gt;&lt;motor_num&gt;&lt;position_percent&gt;0D
+
+3. ServoControl
+    - Developed in Arduino IDE
+    - Uses the wire.h library for I2C communication in slave mode and the servo.h library for servo motor pwm control.
+    - Slave address is 0x08
+    - I2C Command packet is designed as follows :  &lt;command&gt;&lt;motor_num&gt;&lt;position_percent&gt;0D
+    - Only the I2C command 0x0C is supported for now.
+    - Uart display of motor positions enabled.
 
 
 
