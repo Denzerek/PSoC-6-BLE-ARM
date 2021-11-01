@@ -68,16 +68,15 @@ The following details the firmware used in this project (Can be found under the 
     - This firmware can be used as a standalone one where the user can connect to the 'BLEArm' bluetooth advertisement from an android phone using the CySmart application and write the positions of each motor from the motor characteristics for each of the 4 motors.
     - I2C Configured for 400Khz in master mode to send I2C commands to Arduino Slave.
     - Capsense task is capable of changing the selected servo motor by clicking on the capsense buttons while the finger position on the slider will change the position of the selected servo motor.
-    - User can also send UART commands from a terminal application as well to change the position of each motor as a relative to its current position.
-        The following commands can be sent via UART    
-            - 'o' - Move motor 1 by -10%
-            - 'p' - Move motor 1 by  10%
-            - 'k' - Move motor 2 by -10%
-            - 'l' - Move motor 2 by  10%
-            - 'n' - Move motor 3 by -10%
-            - 'm' - Move motor 3 by  10%
-            - ',' - Move motor 4 by -10%
-            - '.' - Move motor 4 by  10%
+    - User can also send UART commands from a terminal application as well to change the position of each motor as a relative to its current position.The following commands can be sent via UART    
+        - 'o' - Move motor 1 by -10%
+        - 'p' - Move motor 1 by  10%
+        - 'k' - Move motor 2 by -10%
+        - 'l' - Move motor 2 by  10%
+        - 'n' - Move motor 3 by -10%
+        - 'm' - Move motor 3 by  10%
+        - ',' - Move motor 4 by -10%
+        - '.' - Move motor 4 by  10%
 
 
 
