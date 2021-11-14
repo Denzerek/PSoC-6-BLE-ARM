@@ -12,6 +12,16 @@
 
 #include "ble_task.h"
 
+
+typedef struct{
+    char * name;
+    uint8_t * serviceUUID;
+    int name_len;
+    uint8_t servUUID_len;
+}advInfo_t;
+ 
+advInfo_t currentAdvInfo;
+
 //#define BLE_PACKET_DEBUG_ENABLE
 SemaphoreHandle_t bleSemaphore;
 
@@ -76,15 +86,6 @@ void writeMotorPosition(motors_t motor,motor_change_t type,uint8_t percent)
     }
 }
 
-
-typedef struct{
-    char * name;
-    uint8_t * serviceUUID;
-    int name_len;
-    uint8_t servUUID_len;
-}advInfo_t;
- 
-advInfo_t currentAdvInfo;
 
 void findAdvInfo(uint8_t*adv,uint8_t len)
 {
@@ -205,7 +206,7 @@ void bleInterruptNotify()
     
 }
 
-void bleTask(void * arg)
+void ble_task(void * arg)
 {
     (void)arg;
     

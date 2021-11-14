@@ -45,7 +45,7 @@ typedef struct
 void writeMotorPosition(motors_t ,motor_change_t,uint8_t);
 uint8_t bleConnectionState();
 
-void bleTask(void*);
+void ble_task(void*);
 
 
 /* [] END OF FILE */

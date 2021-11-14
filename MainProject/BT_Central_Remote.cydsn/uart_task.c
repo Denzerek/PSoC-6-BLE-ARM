@@ -10,10 +10,31 @@
  * ========================================
 */
 
+/*******************************************************************************
+ * Include header files
+ ******************************************************************************/
 #include "uart_task.h"
 #include "ble_task.h"
 
+
+
+/*******************************************************************************
+* Global Variables
+********************************************************************************/
 static SemaphoreHandle_t uartSemaphore;
+
+
+/*******************************************************************************
+ * Function Name: UARTIsr
+ ********************************************************************************
+ * Summary:
+ * This is the interrupt service handler for handling interrupt requests from 
+ * UART SCB block 
+ *
+ * Return:
+ *  void
+ *
+ *******************************************************************************/
 static void UARTIsr()
 {
     // Disable and clear the interrupt
@@ -33,7 +54,17 @@ static void UARTIsr()
 }
 
 
-void UartTask(void * arg)
+/*******************************************************************************
+ * Function Name: uart_task
+ ********************************************************************************
+ * Summary:
+ * UART task for handling incomming user commands on UART SCB block.
+ *
+ * Return:
+ *  void
+ *
+ *******************************************************************************/
+void uart_task(void * arg)
 {
     (void) arg;
     setvbuf(stdin,NULL,_IONBF,0);

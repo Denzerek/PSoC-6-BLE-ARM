@@ -18,7 +18,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)\Source Files\capsense_task.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)\Source Files\motion_task.c">
 <ExpandedNodeIds>
 <v>BT_Peripheral_Controller-000</v>
 <v>BT_Peripheral_Controller-000\BT_Central_Remote</v>

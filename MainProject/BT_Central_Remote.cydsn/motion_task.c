@@ -1,29 +1,28 @@
-/* ========================================
- *
- * Copyright YOUR COMPANY, THE YEAR
- * All Rights Reserved
- * UNPUBLISHED, LICENSED SOFTWARE.
- *
- * CONFIDENTIAL AND PROPRIETARY INFORMATION
- * WHICH IS THE PROPERTY OF your company.
- *
- * ========================================
-*/
 
+/*******************************************************************************
+ * Include header files
+ ******************************************************************************/
 #include "motion_task.h"
 #include "bmi160.h"
 #include "ble_task.h"
 
+
+/*******************************************************************************
+* Macros
+*******************************************************************************/
+#define I2C_TIMEOUT     20
+#define MAXACCEL        32768*2
+
+/*******************************************************************************
+* Extern  Variables
+********************************************************************************/
+
+
+/*******************************************************************************
+* Global Variables
+********************************************************************************/
 static struct bmi160_dev bmi160Dev;
-
-
-typedef struct{
-    uint32_t i2cEvent;
-    char* i2cMessage;
-}i2cEvents_s;
-
 volatile static uint32_t i2cStatus = 0;
-
 i2cEvents_s i2cEvents[] = {
     {CY_SCB_I2C_MASTER_MANUAL_ABORT_START,"CY_SCB_I2C_MASTER_MANUAL_ABORT_START"},
     {CY_SCB_I2C_MASTER_MANUAL_BUS_ERR,"CY_SCB_I2C_MASTER_MANUAL_BUS_ERR"},
@@ -36,6 +35,21 @@ i2cEvents_s i2cEvents[] = {
     {0x00,"NONE"},
 };
 
+
+
+
+
+
+/*******************************************************************************
+ * Function Name: I2C Status Decode
+ ********************************************************************************
+ * Summary:
+ * Decodes the I2C status code and displays the corresponding status message
+ * in the debug console.
+ * Return:
+ *  void
+ *
+ *******************************************************************************/
 void i2cStatusDecode( cy_en_scb_i2c_status_t i2cStatus)
 {
     for(int i = 0; i2cEvents[i].i2cEvent != 0x00 ; i++)
@@ -47,8 +61,14 @@ void i2cStatusDecode( cy_en_scb_i2c_status_t i2cStatus)
     }
 }
 
-#define I2C_TIMEOUT     20
 
+/*******************************************************************************
+ * Function Name: BMI 160 Burst Write
+ ********************************************************************************
+ * Summary:
+ *  Routine to handle the burst write over i2c to the BMI160 IMU
+ * 
+ *******************************************************************************/
 static int8_t BMI160BurstWrite(uint8_t devAddr,uint8_t regAddr,uint8_t *data,uint16_t len)
 {
     cy_en_scb_i2c_status_t retStatus;
@@ -69,6 +89,13 @@ static int8_t BMI160BurstWrite(uint8_t devAddr,uint8_t regAddr,uint8_t *data,uin
 }
 
 
+/*******************************************************************************
+ * Function Name: BMI 160 Burst Read
+ ********************************************************************************
+ * Summary:
+ *  Routine to handle the burst read over i2c to the BMI160 IMU
+ * 
+ *******************************************************************************/
 static int8_t BMI160BurstRead(uint8_t devAddr,uint8_t regAddr,uint8_t *data,uint16_t len)
 {
     cy_en_scb_i2c_status_t retStatus;
@@ -95,6 +122,13 @@ static int8_t BMI160BurstRead(uint8_t devAddr,uint8_t regAddr,uint8_t *data,uint
     return 0;
 }
 
+/*******************************************************************************
+ * Function Name: BMI 160 Init
+ ********************************************************************************
+ * Summary:
+ *  Routine to configure and initialize the BMI 160 IMU
+ * 
+ *******************************************************************************/
 static void bmi160Init(void)
 {
     vTaskDelay(200);
@@ -122,9 +156,16 @@ static void bmi160Init(void)
     
 }
 
-#define MAXACCEL        32768*2
 
-void motionTask(void *arg)
+
+/*******************************************************************************
+ * Function Name: BMI 160 Init
+ ********************************************************************************
+ * Summary:
+ *  Routine to configure and initialize the BMI 160 IMU
+ * 
+ *******************************************************************************/
+void motion_task(void *arg)
 {
     (void) arg;
     static uint8_t bleConnectionCounter;
@@ -142,7 +183,7 @@ void motionTask(void *arg)
     
     while(1)
     {
-        
+        //Verify BLE connection is established before starting motion data acquisition from IMU
         if(!bleConnectionState())
         {
             if(bleConnectionCounter > 100)
@@ -195,25 +236,19 @@ void motionTask(void *arg)
             if(m1Prev != m1)
             {
                 if(m1 > 100 ) m1 = 100;if(m1<0)m1 = 0;
-                
-                //if(bleConnectionState())
                 writeMotorPosition(M1,POS_ABSOLUTE,(int)m1);
                 m1Prev = m1;
-                //serialPrintf("M1 %%%d\tM2 %%%d",m1,m2);
             }
             if(m2Prev != m2)
             {
                 if(m2 > 100 ) m2 = 100;if(m2<0)m2 = 0;
-                
-                //if(bleConnectionState())
                 writeMotorPosition(M2,POS_ABSOLUTE,(int)m2);
                 m2Prev = m2;
             }
             
-                motion_printf("M1 %%%d\tM2 %%%d",(int)m1,(int)m2);
-                
+            motion_printf("M1 %%%d\tM2 %%%d",(int)m1,(int)m2);
             xEventGroupSetBits(systemInputMode,MODE_CAPSENSE);
-                vTaskDelay(50);
+            vTaskDelay(50);
         }
         else
         {

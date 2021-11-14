@@ -11,6 +11,6 @@
 */
 #pragma once
 
-void UartTask(void * arg);
+void uart_task(void * arg);
 
 /* [] END OF FILE */

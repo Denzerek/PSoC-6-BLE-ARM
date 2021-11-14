@@ -14,11 +14,14 @@
 #include "common.h"
 
 
-
 #define motion_printer(x)       TRANSMITTER("[ MOTION ] : ");TRANSMITTER(x);
 #define motion_print(x)         TRANSMITTER("[ MOTION ] : ");TRANSMITTER(x);TRANSMITTER("\r\n");
 #define motion_printf(x,...)    TRANSMITTER("[ MOTION ] : ");TRANSMITTER(x,__VA_ARGS__);TRANSMITTER("\r\n");
 
+typedef struct{
+    uint32_t i2cEvent;
+    char* i2cMessage;
+}i2cEvents_s;
 
-void motionTask(void* arg);
+void motion_task(void* arg);
 /* [] END OF FILE */
