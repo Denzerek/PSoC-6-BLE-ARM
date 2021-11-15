@@ -21,6 +21,6 @@
 #define cap_printf(x,...)  { TRANSMITTER("[ CAP TASK ] : ");TRANSMITTER(x,__VA_ARGS__);TRANSMITTER("\r\n");}
 
 
-void capsenseTask(void *arg);
+void capSense_task(void *arg);
 
 /* [] END OF FILE */

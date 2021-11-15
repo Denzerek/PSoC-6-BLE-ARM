@@ -189,11 +189,11 @@ c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.
 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-nano-vfscanf_float.o)
                               .\CortexM4\ARM_GCC_541\Debug\retarget.o (_scanf_float)
 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-printf.o)
-                              .\CortexM4\ARM_GCC_541\Debug\main_cm4.o (printf)
+                              .\CortexM4\ARM_GCC_541\Debug\ble_task.o (printf)
 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-putchar.o)
-                              .\CortexM4\ARM_GCC_541\Debug\main_cm4.o (putchar)
+                              .\CortexM4\ARM_GCC_541\Debug\ble_task.o (putchar)
 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-puts.o)
-                              .\CortexM4\ARM_GCC_541\Debug\main_cm4.o (puts)
+                              .\CortexM4\ARM_GCC_541\Debug\ble_task.o (puts)
 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-rget.o)
                               .\CortexM4\ARM_GCC_541\Debug\uart_task.o (__srget_r)
 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-setvbuf.o)
@@ -381,15 +381,15 @@ Discarded input sections
                 0x00000000       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o
  .data          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\startup_psoc6_01_cm4.o
  .bss           0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\startup_psoc6_01_cm4.o
+ .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+ .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
+ .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
  .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
  .data          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
  .bss           0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
- .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
+ .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\motion_task.o
  .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\uart_task.o
  .data          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\uart_task.o
- .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
- .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\motion_task.o
- .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
  .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\bmi160.o
  .data          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\bmi160.o
  .bss           0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\bmi160.o
@@ -3295,12 +3295,12 @@ LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm
 START GROUP
 LOAD Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a
 LOAD .\CortexM4\ARM_GCC_541\Debug\startup_psoc6_01_cm4.o
-LOAD .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
-LOAD .\CortexM4\ARM_GCC_541\Debug\ble_task.o
-LOAD .\CortexM4\ARM_GCC_541\Debug\uart_task.o
-LOAD .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
-LOAD .\CortexM4\ARM_GCC_541\Debug\motion_task.o
 LOAD .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+LOAD .\CortexM4\ARM_GCC_541\Debug\ble_task.o
+LOAD .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
+LOAD .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
+LOAD .\CortexM4\ARM_GCC_541\Debug\motion_task.o
+LOAD .\CortexM4\ARM_GCC_541\Debug\uart_task.o
 LOAD .\CortexM4\ARM_GCC_541\Debug\bmi160.o
 LOAD .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
 LOAD .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
@@ -3589,63 +3589,63 @@ END GROUP
                 0x10080350                HardFault_Handler
                 0x10080350                MemManage_Handler
                 0x10080350                BusFault_Handler
- .text.startUpInfo
-                0x1008036c       0xf8 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
-                0x1008036c                startUpInfo
- .text.main     0x10080464       0xb4 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
-                0x10080464                main
- .text.bleInterruptNotify
-                0x10080518       0x38 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
-                0x10080518                bleInterruptNotify
- .text.bleConnectionState
-                0x10080550        0xc .\CortexM4\ARM_GCC_541\Debug\ble_task.o
-                0x10080550                bleConnectionState
- .text.writeMotorPosition
-                0x1008055c       0xd8 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
-                0x1008055c                writeMotorPosition
- .text.findAdvInfo
-                0x10080634       0x54 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
-                0x10080634                findAdvInfo
- .text.genericEventHandler
-                0x10080688      0x1b4 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
-                0x10080688                genericEventHandler
- .text.ble_task
-                0x1008083c       0x6c .\CortexM4\ARM_GCC_541\Debug\ble_task.o
-                0x1008083c                ble_task
- .text.UARTIsr  0x100808a8       0x74 .\CortexM4\ARM_GCC_541\Debug\uart_task.o
- .text.uart_task
-                0x1008091c      0x26c .\CortexM4\ARM_GCC_541\Debug\uart_task.o
-                0x1008091c                uart_task
- .text.capSense_task
-                0x10080b88      0x13c .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
-                0x10080b88                capSense_task
- .text.bmi160Init
-                0x10080cc4       0x5c .\CortexM4\ARM_GCC_541\Debug\motion_task.o
- .text.i2cStatusDecode
-                0x10080d20       0x40 .\CortexM4\ARM_GCC_541\Debug\motion_task.o
-                0x10080d20                i2cStatusDecode
- .text.BMI160BurstWrite
-                0x10080d60       0x6c .\CortexM4\ARM_GCC_541\Debug\motion_task.o
- .text.BMI160BurstRead
-                0x10080dcc       0xa4 .\CortexM4\ARM_GCC_541\Debug\motion_task.o
- .text.motion_task
-                0x10080e70      0x304 .\CortexM4\ARM_GCC_541\Debug\motion_task.o
-                0x10080e70                motion_task
  .text.Cy_SysIpcPipeIsrCm4
-                0x10081174        0xc .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
-                0x10081174                Cy_SysIpcPipeIsrCm4
+                0x1008036c        0xc .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+                0x1008036c                Cy_SysIpcPipeIsrCm4
  .text.Cy_SystemInit
-                0x10081180        0x4 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
-                0x10081180                Cy_SystemInit
+                0x10080378        0x4 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+                0x10080378                Cy_SystemInit
  .text.SystemCoreClockUpdate
-                0x10081184      0x190 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
-                0x10081184                SystemCoreClockUpdate
+                0x1008037c      0x190 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+                0x1008037c                SystemCoreClockUpdate
  .text.SystemInit
-                0x10081314       0x48 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
-                0x10081314                SystemInit
+                0x1008050c       0x48 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+                0x1008050c                SystemInit
  .text.Cy_SystemInitFpuEnable
-                0x1008135c       0x28 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
-                0x1008135c                Cy_SystemInitFpuEnable
+                0x10080554       0x28 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+                0x10080554                Cy_SystemInitFpuEnable
+ .text.bleInterruptNotify
+                0x1008057c       0x38 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
+                0x1008057c                bleInterruptNotify
+ .text.bleConnectionState
+                0x100805b4        0xc .\CortexM4\ARM_GCC_541\Debug\ble_task.o
+                0x100805b4                bleConnectionState
+ .text.writeMotorPosition
+                0x100805c0       0xd8 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
+                0x100805c0                writeMotorPosition
+ .text.findAdvInfo
+                0x10080698       0x54 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
+                0x10080698                findAdvInfo
+ .text.genericEventHandler
+                0x100806ec      0x1b4 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
+                0x100806ec                genericEventHandler
+ .text.ble_task
+                0x100808a0       0x6c .\CortexM4\ARM_GCC_541\Debug\ble_task.o
+                0x100808a0                ble_task
+ .text.capSense_task
+                0x1008090c      0x13c .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
+                0x1008090c                capSense_task
+ .text.startUpInfo
+                0x10080a48       0xf8 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
+                0x10080a48                startUpInfo
+ .text.main     0x10080b40       0xb4 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
+                0x10080b40                main
+ .text.bmi160Init
+                0x10080bf4       0x5c .\CortexM4\ARM_GCC_541\Debug\motion_task.o
+ .text.i2cStatusDecode
+                0x10080c50       0x40 .\CortexM4\ARM_GCC_541\Debug\motion_task.o
+                0x10080c50                i2cStatusDecode
+ .text.BMI160BurstWrite
+                0x10080c90       0x6c .\CortexM4\ARM_GCC_541\Debug\motion_task.o
+ .text.BMI160BurstRead
+                0x10080cfc       0xa4 .\CortexM4\ARM_GCC_541\Debug\motion_task.o
+ .text.motion_task
+                0x10080da0      0x304 .\CortexM4\ARM_GCC_541\Debug\motion_task.o
+                0x10080da0                motion_task
+ .text.UARTIsr  0x100810a4       0x74 .\CortexM4\ARM_GCC_541\Debug\uart_task.o
+ .text.uart_task
+                0x10081118      0x26c .\CortexM4\ARM_GCC_541\Debug\uart_task.o
+                0x10081118                uart_task
  .text.null_ptr_check
                 0x10081384       0x2c .\CortexM4\ARM_GCC_541\Debug\bmi160.o
  .text.default_param_settg
@@ -4896,25 +4896,25 @@ END GROUP
  *(SORT(.dtors.*))
  *(.dtors)
  *(.rodata .rodata.* .constdata .constdata.* .conststring .conststring.*)
+ .rodata        0x1008ec90       0x34 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
  .rodata.str1.4
-                0x1008ec90       0xc5 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
- *fill*         0x1008ed55        0x3 
+                0x1008ecc4      0x151 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
+ *fill*         0x1008ee15        0x3 
  .rodata.str1.4
-                0x1008ed58      0x14d .\CortexM4\ARM_GCC_541\Debug\ble_task.o
-                                0x151 (size before relaxing)
- *fill*         0x1008eea5        0x3 
- .rodata.str1.4
-                0x1008eea8       0xb0 .\CortexM4\ARM_GCC_541\Debug\uart_task.o
-                                 0xc0 (size before relaxing)
- .rodata.str1.4
-                0x1008ef58       0x63 .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
+                0x1008ee18       0x63 .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
                                  0x67 (size before relaxing)
- *fill*         0x1008efbb        0x1 
+ *fill*         0x1008ee7b        0x1 
  .rodata.str1.4
-                0x1008efbc      0x149 .\CortexM4\ARM_GCC_541\Debug\motion_task.o
+                0x1008ee7c       0xc1 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
+                                 0xc5 (size before relaxing)
+ *fill*         0x1008ef3d        0x3 
+ .rodata.str1.4
+                0x1008ef40      0x149 .\CortexM4\ARM_GCC_541\Debug\motion_task.o
                                 0x16d (size before relaxing)
- *fill*         0x1008f105        0x3 
- .rodata        0x1008f108       0x34 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+ *fill*         0x1008f089        0x3 
+ .rodata.str1.4
+                0x1008f08c       0xb0 .\CortexM4\ARM_GCC_541\Debug\uart_task.o
+                                 0xc0 (size before relaxing)
  .rodata        0x1008f13c       0x18 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
                 0x1008f13c                CapSense_ISR_cfg
                 0x1008f144                UART_SCB_IRQ_cfg
@@ -8477,7 +8477,7 @@ i.l2cap_lp_connect_ind
                 0x1009e810                . = ALIGN (0x4)
                 0x1009e810                __zero_table_start__ = .
                 0x1009e810        0x4 LONG 0x80276dc __bss_start__
-                0x1009e814        0x4 LONG 0xce50 (__bss_end__ - __bss_start__)
+                0x1009e814        0x4 LONG 0xce4c (__bss_end__ - __bss_start__)
                 0x1009e818                __zero_table_end__ = .
                 0x1009e818                __etext = .
 
@@ -8492,21 +8492,21 @@ i.l2cap_lp_connect_ind
                 0x0802428c                __data_start__ = .
  *(vtable)
  *(.data*)
- .data          0x0802428c       0x18 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
-                0x0802428c                motorToControl
- .data          0x080242a4        0x1 .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
- *fill*         0x080242a5        0x3 
- .data          0x080242a8       0x48 .\CortexM4\ARM_GCC_541\Debug\motion_task.o
-                0x080242a8                i2cEvents
- .data          0x080242f0       0x20 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
-                0x080242f0                cy_BleEcoClockFreqHz
-                0x080242f4                cy_Hfclk0FreqHz
-                0x080242f8                cy_PeriClkFreqHz
-                0x080242fc                SystemCoreClock
-                0x08024300                cy_delayFreqHz
-                0x08024304                cy_delayFreqMhz
-                0x08024308                cy_delayFreqKhz
-                0x0802430c                cy_delay32kMs
+ .data          0x0802428c       0x20 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+                0x0802428c                cy_BleEcoClockFreqHz
+                0x08024290                cy_Hfclk0FreqHz
+                0x08024294                cy_PeriClkFreqHz
+                0x08024298                SystemCoreClock
+                0x0802429c                cy_delayFreqHz
+                0x080242a0                cy_delayFreqMhz
+                0x080242a4                cy_delayFreqKhz
+                0x080242a8                cy_delay32kMs
+ .data          0x080242ac       0x18 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
+                0x080242ac                motorToControl
+ .data          0x080242c4        0x1 .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
+ *fill*         0x080242c5        0x3 
+ .data          0x080242c8       0x48 .\CortexM4\ARM_GCC_541\Debug\motion_task.o
+                0x080242c8                i2cEvents
  .data          0x08024310       0xb2 .\CortexM4\ARM_GCC_541\Debug\BLE_config.o
                 0x08024310                cy_ble_config
                 0x0802434c                cy_ble_deviceAddress
@@ -8730,162 +8730,161 @@ i.l2cap_lp_connect_ind
  .noinit        0x08024dcc     0x2910 .\CortexM4\ARM_GCC_541\Debug\cy_ble.o
                 0x08024dcc                cy_ble_stackMemoryRam
 
-.bss            0x080276dc     0xce50 load address 0x100a1c6c
+.bss            0x080276dc     0xce4c load address 0x100a1c6c
                 0x080276dc                . = ALIGN (0x4)
                 0x080276dc                __bss_start__ = .
  *(.bss*)
  .bss           0x080276dc       0x1c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtbegin.o
- .bss           0x080276f8        0x1 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
- *fill*         0x080276f9        0x3 
- .bss           0x080276fc        0x4 .\CortexM4\ARM_GCC_541\Debug\uart_task.o
- .bss           0x08027700        0x1 .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
- *fill*         0x08027701        0x3 
- .bss           0x08027704       0x34 .\CortexM4\ARM_GCC_541\Debug\motion_task.o
- .bss           0x08027738      0x180 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
- .bss           0x080278b8        0x1 .\CortexM4\ARM_GCC_541\Debug\BLE.o
-                0x080278b8                cy_ble_initVar
- *fill*         0x080278b9        0x3 
- .bss           0x080278bc        0x2 .\CortexM4\ARM_GCC_541\Debug\BLE_config.o
- *fill*         0x080278be        0x2 
- .bss           0x080278c0       0x18 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
- .bss           0x080278d8        0xc .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
- .bss           0x080278e4        0x4 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
- .bss           0x080278e8       0x3c .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
- .bss           0x08027924       0x24 .\CortexM4\ARM_GCC_541\Debug\cy_ble.o
-                0x0802792c                cy_ble_configPtr
-                0x08027930                Cy_BLE_ApplCallback
-                0x08027934                Cy_BLE_HostRegisteredCallback
- .bss           0x08027948        0xc .\CortexM4\ARM_GCC_541\Debug\cy_ble_hal_pvt.o
-                0x08027950                Cy_BLE_InterruptCallback
- .bss           0x08027954       0x11 .\CortexM4\ARM_GCC_541\Debug\cy_ble_gap.o
-                0x08027960                cy_ble_pairStatus
-                0x08027964                cy_ble_devConnRole
- *fill*         0x08027965        0x3 
- .bss           0x08027968        0xc .\CortexM4\ARM_GCC_541\Debug\cy_ble_event_handler.o
- .bss           0x08027974        0xc .\CortexM4\ARM_GCC_541\Debug\cy_ble_custom.o
-                0x08027974                cy_ble_customConfigPtr
- .bss           0x08027980      0x12c .\CortexM4\ARM_GCC_541\Debug\tasks.o
-                0x08027a80                pxCurrentTCB
- .bss           0x08027aac       0x3c .\CortexM4\ARM_GCC_541\Debug\timers.o
- .bss           0x08027ae8        0x8 .\CortexM4\ARM_GCC_541\Debug\port.o
- .bss           0x08027af0     0xc018 .\CortexM4\ARM_GCC_541\Debug\heap_4.o
- .bss           0x08033b08        0x1 .\CortexM4\ARM_GCC_541\Debug\UART.o
-                0x08033b08                UART_initVar
- .bss           0x08033b09        0x1 .\CortexM4\ARM_GCC_541\Debug\CapSense_Control.o
- *fill*         0x08033b0a        0x2 
- .bss           0x08033b0c       0x45 .\CortexM4\ARM_GCC_541\Debug\CapSense_Structure.o
- *fill*         0x08033b51        0x3 
- .bss           0x08033b54        0x4 .\CortexM4\ARM_GCC_541\Debug\CapSense_Tuner.o
- .bss           0x08033b58        0x9 .\CortexM4\ARM_GCC_541\Debug\CapSense_Sensing.o
-                0x08033b58                CapSense_currentSenseMethod
-                0x08033b59                CapSense_requestScanAllWidget
-                0x08033b5a                CapSense_widgetIndex
-                0x08033b5c                CapSense_curFlashWdgtPtr
-                0x08033b60                CapSense_sensorIndex
- .bss           0x08033b61        0x1 .\CortexM4\ARM_GCC_541\Debug\CapSense_SensingCSD_LL.o
- *fill*         0x08033b62        0x2 
- .bss           0x08033b64       0x12 .\CortexM4\ARM_GCC_541\Debug\CapSense_SensingCSX_LL.o
-                0x08033b64                CapSense_csxScanPeriod
-                0x08033b66                CapSense_csxRawCount
- *fill*         0x08033b76        0x2 
- .bss           0x08033b78        0xe .\CortexM4\ARM_GCC_541\Debug\CapSense_Centroid_LL.o
- .bss           0x08033b86        0x1 .\CortexM4\ARM_GCC_541\Debug\I2C_1.o
-                0x08033b86                I2C_1_initVar
- *fill*         0x08033b87        0x1 
- .bss           0x08033b88       0x3e Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(CyBleStackMgrIP_Interface.o)
-                0x08033b88                cyBleStackHeap
- *fill*         0x08033bc6        0x2 
- .bss           0x08033bc8       0x60 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(storage_pl.o)
-                0x08033bc8                storageManagerInfo
- .bss           0x08033c28      0x130 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(mint_os.o)
-                0x08033d28                g_queue_array
-                0x08033d3c                g_task_array
- .bss           0x08033d58       0x18 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(transport_ipc.o)
- .bss           0x08033d70      0x1e0 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(CyBleStackMgr_PSoCIPCHal.o)
- .bss           0x08033f50       0x10 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(host_main.o)
- .bss           0x08033f60        0xc Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(l2cap.o)
- .bss           0x08033f6c       0x18 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(l2cap_init.o)
-                0x08033f6c                l2cap_fixed_channel
- .bss           0x08033f84       0x8c Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(gap_api.o)
-                0x08033f84                gGapContext
- .bss           0x08034010       0x20 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(gap_smp_iface.o)
-                0x08034010                gLocalCsrk
-                0x08034020                gRemoteCsrk
- .bss           0x08034030       0x20 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(gatt.o)
-                0x08034030                gattContext
- .bss           0x08034050       0x48 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(hci_events.o)
- .bss           0x08034098       0x14 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(hci_init.o)
-                0x08034098                hci_command_in_tx
- .bss           0x080340ac      0x120 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(hci_timer_utils.o)
-                0x080340ac                hci_timer_entity
- .bss           0x080341cc       0x14 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(smp_init.o)
-                0x080341cc                smp_pvt_addr
- .bss           0x080341e0      0x100 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(write_task.o)
+ .bss           0x080276f8      0x180 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+ .bss           0x08027878        0x1 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
+ .bss           0x08027879        0x1 .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
+ *fill*         0x0802787a        0x2 
+ .bss           0x0802787c       0x34 .\CortexM4\ARM_GCC_541\Debug\motion_task.o
+ .bss           0x080278b0        0x4 .\CortexM4\ARM_GCC_541\Debug\uart_task.o
+ .bss           0x080278b4        0x1 .\CortexM4\ARM_GCC_541\Debug\BLE.o
+                0x080278b4                cy_ble_initVar
+ *fill*         0x080278b5        0x3 
+ .bss           0x080278b8        0x2 .\CortexM4\ARM_GCC_541\Debug\BLE_config.o
+ *fill*         0x080278ba        0x2 
+ .bss           0x080278bc       0x18 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+ .bss           0x080278d4        0xc .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+ .bss           0x080278e0        0x4 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+ .bss           0x080278e4       0x3c .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
+ .bss           0x08027920       0x24 .\CortexM4\ARM_GCC_541\Debug\cy_ble.o
+                0x08027928                cy_ble_configPtr
+                0x0802792c                Cy_BLE_ApplCallback
+                0x08027930                Cy_BLE_HostRegisteredCallback
+ .bss           0x08027944        0xc .\CortexM4\ARM_GCC_541\Debug\cy_ble_hal_pvt.o
+                0x0802794c                Cy_BLE_InterruptCallback
+ .bss           0x08027950       0x11 .\CortexM4\ARM_GCC_541\Debug\cy_ble_gap.o
+                0x0802795c                cy_ble_pairStatus
+                0x08027960                cy_ble_devConnRole
+ *fill*         0x08027961        0x3 
+ .bss           0x08027964        0xc .\CortexM4\ARM_GCC_541\Debug\cy_ble_event_handler.o
+ .bss           0x08027970        0xc .\CortexM4\ARM_GCC_541\Debug\cy_ble_custom.o
+                0x08027970                cy_ble_customConfigPtr
+ .bss           0x0802797c      0x12c .\CortexM4\ARM_GCC_541\Debug\tasks.o
+                0x08027a7c                pxCurrentTCB
+ .bss           0x08027aa8       0x3c .\CortexM4\ARM_GCC_541\Debug\timers.o
+ .bss           0x08027ae4        0x8 .\CortexM4\ARM_GCC_541\Debug\port.o
+ .bss           0x08027aec     0xc018 .\CortexM4\ARM_GCC_541\Debug\heap_4.o
+ .bss           0x08033b04        0x1 .\CortexM4\ARM_GCC_541\Debug\UART.o
+                0x08033b04                UART_initVar
+ .bss           0x08033b05        0x1 .\CortexM4\ARM_GCC_541\Debug\CapSense_Control.o
+ *fill*         0x08033b06        0x2 
+ .bss           0x08033b08       0x45 .\CortexM4\ARM_GCC_541\Debug\CapSense_Structure.o
+ *fill*         0x08033b4d        0x3 
+ .bss           0x08033b50        0x4 .\CortexM4\ARM_GCC_541\Debug\CapSense_Tuner.o
+ .bss           0x08033b54        0x9 .\CortexM4\ARM_GCC_541\Debug\CapSense_Sensing.o
+                0x08033b54                CapSense_currentSenseMethod
+                0x08033b55                CapSense_requestScanAllWidget
+                0x08033b56                CapSense_widgetIndex
+                0x08033b58                CapSense_curFlashWdgtPtr
+                0x08033b5c                CapSense_sensorIndex
+ .bss           0x08033b5d        0x1 .\CortexM4\ARM_GCC_541\Debug\CapSense_SensingCSD_LL.o
+ *fill*         0x08033b5e        0x2 
+ .bss           0x08033b60       0x12 .\CortexM4\ARM_GCC_541\Debug\CapSense_SensingCSX_LL.o
+                0x08033b60                CapSense_csxScanPeriod
+                0x08033b62                CapSense_csxRawCount
+ *fill*         0x08033b72        0x2 
+ .bss           0x08033b74        0xe .\CortexM4\ARM_GCC_541\Debug\CapSense_Centroid_LL.o
+ .bss           0x08033b82        0x1 .\CortexM4\ARM_GCC_541\Debug\I2C_1.o
+                0x08033b82                I2C_1_initVar
+ *fill*         0x08033b83        0x1 
+ .bss           0x08033b84       0x3e Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(CyBleStackMgrIP_Interface.o)
+                0x08033b84                cyBleStackHeap
+ *fill*         0x08033bc2        0x2 
+ .bss           0x08033bc4       0x60 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(storage_pl.o)
+                0x08033bc4                storageManagerInfo
+ .bss           0x08033c24      0x130 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(mint_os.o)
+                0x08033d24                g_queue_array
+                0x08033d38                g_task_array
+ .bss           0x08033d54       0x18 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(transport_ipc.o)
+ .bss           0x08033d6c      0x1e0 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(CyBleStackMgr_PSoCIPCHal.o)
+ .bss           0x08033f4c       0x10 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(host_main.o)
+ .bss           0x08033f5c        0xc Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(l2cap.o)
+ .bss           0x08033f68       0x18 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(l2cap_init.o)
+                0x08033f68                l2cap_fixed_channel
+ .bss           0x08033f80       0x8c Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(gap_api.o)
+                0x08033f80                gGapContext
+ .bss           0x0803400c       0x20 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(gap_smp_iface.o)
+                0x0803400c                gLocalCsrk
+                0x0803401c                gRemoteCsrk
+ .bss           0x0803402c       0x20 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(gatt.o)
+                0x0803402c                gattContext
+ .bss           0x0803404c       0x48 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(hci_events.o)
+ .bss           0x08034094       0x14 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(hci_init.o)
+                0x08034094                hci_command_in_tx
+ .bss           0x080340a8      0x120 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(hci_timer_utils.o)
+                0x080340a8                hci_timer_entity
+ .bss           0x080341c8       0x14 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(smp_init.o)
+                0x080341c8                smp_pvt_addr
+ .bss           0x080341dc      0x100 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(write_task.o)
  .bss.__malloc_sbrk_start
-                0x080342e0        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-nano-mallocr.o)
-                0x080342e0                __malloc_sbrk_start
+                0x080342dc        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-nano-mallocr.o)
+                0x080342dc                __malloc_sbrk_start
  .bss.__malloc_free_list
-                0x080342e4        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-nano-mallocr.o)
-                0x080342e4                __malloc_free_list
+                0x080342e0        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-nano-mallocr.o)
+                0x080342e0                __malloc_free_list
  .bss.heap_end.4169
-                0x080342e8        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(sbrk.o)
+                0x080342e4        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(sbrk.o)
  *(COMMON)
- COMMON         0x080342ec        0x4 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
-                0x080342ec                systemInputMode
- COMMON         0x080342f0       0x14 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
-                0x080342f0                bleSemaphore
-                0x080342f4                currentAdvInfo
- COMMON         0x08034304        0x4 .\CortexM4\ARM_GCC_541\Debug\cy_device.o
-                0x08034304                cy_device
- COMMON         0x08034308       0x2e .\CortexM4\ARM_GCC_541\Debug\cy_ble_gap.o
-                0x08034308                cy_ble_connHandle
-                0x0803430a                cy_ble_pendingFlashWrite
-                0x0803430b                cy_ble_scanState
-                0x0803430c                cy_ble_state
-                0x08034310                cy_ble_peerBonding
-                0x08034314                cy_ble_connectingTimeout
-                0x08034318                cy_ble_connState
-                0x08034319                cy_ble_scanIndex
-                0x0803431c                cy_ble_connectionParameters
- *fill*         0x08034336        0x2 
- COMMON         0x08034338        0x3 .\CortexM4\ARM_GCC_541\Debug\cy_ble_gatt.o
-                0x08034338                cy_ble_attValuesCccdMultiple
- *fill*         0x0803433b        0x1 
- COMMON         0x0803433c       0x6c .\CortexM4\ARM_GCC_541\Debug\cy_ble_event_handler.o
-                0x0803433c                cy_ble_eventHandlerFlag
-                0x0803433d                cy_ble_scanningIntervalType
-                0x08034340                cy_ble_busyStatus
-                0x08034344                cy_ble_serverInfo
-                0x08034358                cy_ble_discovery
-                0x0803439c                cy_ble_cmdStatus
-                0x080343a0                cy_ble_eventHandler
- COMMON         0x080343a8       0x50 .\CortexM4\ARM_GCC_541\Debug\queue.o
-                0x080343a8                xQueueRegistry
- COMMON         0x080343f8       0x38 .\CortexM4\ARM_GCC_541\Debug\UART.o
-                0x080343f8                UART_context
- COMMON         0x08034430       0xa4 .\CortexM4\ARM_GCC_541\Debug\CapSense_Structure.o
-                0x08034430                CapSense_dsRam
- COMMON         0x080344d4        0x8 .\CortexM4\ARM_GCC_541\Debug\CapSense_Sensing.o
-                0x080344d4                CapSense_curRamSnsPtr
-                0x080344d8                CapSense_curSnsIOPtr
- COMMON         0x080344dc       0x4c .\CortexM4\ARM_GCC_541\Debug\I2C_1.o
-                0x080344dc                I2C_1_context
- COMMON         0x08034528        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-reent.o)
-                0x08034528                errno
-                0x0803452c                . = ALIGN (0x4)
-                0x0803452c                __bss_end__ = .
+ COMMON         0x080342e8       0x14 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
+                0x080342e8                bleSemaphore
+                0x080342ec                currentAdvInfo
+ COMMON         0x080342fc        0x4 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
+                0x080342fc                systemInputMode
+ COMMON         0x08034300        0x4 .\CortexM4\ARM_GCC_541\Debug\cy_device.o
+                0x08034300                cy_device
+ COMMON         0x08034304       0x2e .\CortexM4\ARM_GCC_541\Debug\cy_ble_gap.o
+                0x08034304                cy_ble_connHandle
+                0x08034306                cy_ble_pendingFlashWrite
+                0x08034307                cy_ble_scanState
+                0x08034308                cy_ble_state
+                0x0803430c                cy_ble_peerBonding
+                0x08034310                cy_ble_connectingTimeout
+                0x08034314                cy_ble_connState
+                0x08034315                cy_ble_scanIndex
+                0x08034318                cy_ble_connectionParameters
+ *fill*         0x08034332        0x2 
+ COMMON         0x08034334        0x3 .\CortexM4\ARM_GCC_541\Debug\cy_ble_gatt.o
+                0x08034334                cy_ble_attValuesCccdMultiple
+ *fill*         0x08034337        0x1 
+ COMMON         0x08034338       0x6c .\CortexM4\ARM_GCC_541\Debug\cy_ble_event_handler.o
+                0x08034338                cy_ble_eventHandlerFlag
+                0x08034339                cy_ble_scanningIntervalType
+                0x0803433c                cy_ble_busyStatus
+                0x08034340                cy_ble_serverInfo
+                0x08034354                cy_ble_discovery
+                0x08034398                cy_ble_cmdStatus
+                0x0803439c                cy_ble_eventHandler
+ COMMON         0x080343a4       0x50 .\CortexM4\ARM_GCC_541\Debug\queue.o
+                0x080343a4                xQueueRegistry
+ COMMON         0x080343f4       0x38 .\CortexM4\ARM_GCC_541\Debug\UART.o
+                0x080343f4                UART_context
+ COMMON         0x0803442c       0xa4 .\CortexM4\ARM_GCC_541\Debug\CapSense_Structure.o
+                0x0803442c                CapSense_dsRam
+ COMMON         0x080344d0        0x8 .\CortexM4\ARM_GCC_541\Debug\CapSense_Sensing.o
+                0x080344d0                CapSense_curRamSnsPtr
+                0x080344d4                CapSense_curSnsIOPtr
+ COMMON         0x080344d8       0x4c .\CortexM4\ARM_GCC_541\Debug\I2C_1.o
+                0x080344d8                I2C_1_context
+ COMMON         0x08034524        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-reent.o)
+                0x08034524                errno
+                0x08034528                . = ALIGN (0x4)
+                0x08034528                __bss_end__ = .
 
-.heap           0x08034530      0x400
-                0x08034530                __HeapBase = .
-                0x08034530                __end__ = .
-                0x08034530                end = __end__
+.heap           0x08034528      0x400
+                0x08034528                __HeapBase = .
+                0x08034528                __end__ = .
+                0x08034528                end = __end__
  *(.heap*)
- .heap          0x08034530      0x400 .\CortexM4\ARM_GCC_541\Debug\startup_psoc6_01_cm4.o
-                0x08034930                __HeapLimit = .
+ .heap          0x08034528      0x400 .\CortexM4\ARM_GCC_541\Debug\startup_psoc6_01_cm4.o
+                0x08034928                __HeapLimit = .
 
-.stack_dummy    0x08034530     0x1000
+.stack_dummy    0x08034528     0x1000
  *(.stack*)
- .stack         0x08034530     0x1000 .\CortexM4\ARM_GCC_541\Debug\startup_psoc6_01_cm4.o
+ .stack         0x08034528     0x1000 .\CortexM4\ARM_GCC_541\Debug\startup_psoc6_01_cm4.o
                 0x08047800                __StackTop = (ORIGIN (ram) + LENGTH (ram))
                 0x08046800                __StackLimit = (__StackTop - SIZEOF (.stack_dummy))
                 0x08047800                PROVIDE (__stack, __StackTop)
@@ -8940,8 +8939,8 @@ i.l2cap_lp_connect_ind
                 0x00000001                __cy_memory_4_row_size = 0x1
 OUTPUT(C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Central_Remote.cydsn\CortexM4\ARM_GCC_541\Debug\BT_Central_Remote_link.elf elf32-littlearm)
 
-.rel.dyn        0x0803452c        0x0 load address 0x9857a59c
- .rel.iplt      0x0803452c        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtbegin.o
+.rel.dyn        0x08034528        0x0 load address 0x9857a59c
+ .rel.iplt      0x08034528        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtbegin.o
 
 .ARM.attributes
                 0x00000000       0x30
@@ -8952,17 +8951,17 @@ OUTPUT(C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Central_Remote.cyds
  .ARM.attributes
                 0x00000054       0x1f .\CortexM4\ARM_GCC_541\Debug\startup_psoc6_01_cm4.o
  .ARM.attributes
-                0x00000073       0x37 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
+                0x00000073       0x37 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
  .ARM.attributes
                 0x000000aa       0x37 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
  .ARM.attributes
-                0x000000e1       0x37 .\CortexM4\ARM_GCC_541\Debug\uart_task.o
+                0x000000e1       0x37 .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
  .ARM.attributes
-                0x00000118       0x37 .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
+                0x00000118       0x37 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
  .ARM.attributes
                 0x0000014f       0x37 .\CortexM4\ARM_GCC_541\Debug\motion_task.o
  .ARM.attributes
-                0x00000186       0x37 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+                0x00000186       0x37 .\CortexM4\ARM_GCC_541\Debug\uart_task.o
  .ARM.attributes
                 0x000001bd       0x37 .\CortexM4\ARM_GCC_541\Debug\bmi160.o
  .ARM.attributes
@@ -9335,13 +9334,13 @@ OUTPUT(C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Central_Remote.cyds
                 0x00002c32       0x32 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc.a(lib_a-errno.o)
 
 .comment        0x00000000    0x19e02
- .comment       0x00000000       0x6e .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
+ .comment       0x00000000       0x6e .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
                                  0x6f (size before relaxing)
  .comment       0x0000006e       0x6f .\CortexM4\ARM_GCC_541\Debug\ble_task.o
- .comment       0x0000006e       0x6f .\CortexM4\ARM_GCC_541\Debug\uart_task.o
  .comment       0x0000006e       0x6f .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
+ .comment       0x0000006e       0x6f .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
  .comment       0x0000006e       0x6f .\CortexM4\ARM_GCC_541\Debug\motion_task.o
- .comment       0x0000006e       0x6f .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+ .comment       0x0000006e       0x6f .\CortexM4\ARM_GCC_541\Debug\uart_task.o
  .comment       0x0000006e       0x6f .\CortexM4\ARM_GCC_541\Debug\bmi160.o
  .comment       0x0000006e       0x6f .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
  .comment       0x0000006e       0x6f .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
@@ -9609,71 +9608,71 @@ OUTPUT(C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Central_Remote.cyds
  .arm_vfe_header
                 0x0000011c        0x4 Generated_Source\PSoC6\pdl\middleware\ble\lib\cy_ble_stack_gcc_host_ipc_cm4.a(l2cap_connect.o)
 
-.debug_line     0x00000000    0x12ba3
+.debug_line     0x00000000    0x12bb7
  .debug_line    0x00000000       0x8e .\CortexM4\ARM_GCC_541\Debug\startup_psoc6_01_cm4.o
- .debug_line    0x0000008e      0x5b2 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
- .debug_line    0x00000640      0x693 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
- .debug_line    0x00000cd3      0x67a .\CortexM4\ARM_GCC_541\Debug\uart_task.o
- .debug_line    0x0000134d      0x406 .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
- .debug_line    0x00001753      0x6ad .\CortexM4\ARM_GCC_541\Debug\motion_task.o
- .debug_line    0x00001e00      0x437 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
- .debug_line    0x00002237     0x12d2 .\CortexM4\ARM_GCC_541\Debug\bmi160.o
- .debug_line    0x00003509      0x368 .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
- .debug_line    0x00003871      0x251 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
- .debug_line    0x00003ac2      0x141 .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
- .debug_line    0x00003c03      0x399 .\CortexM4\ARM_GCC_541\Debug\BLE.o
- .debug_line    0x00003f9c      0x36d .\CortexM4\ARM_GCC_541\Debug\BLE_config.o
- .debug_line    0x00004309      0x243 .\CortexM4\ARM_GCC_541\Debug\BLE_custom_config.o
- .debug_line    0x0000454c      0x7d4 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
- .debug_line    0x00004d20      0x4fa .\CortexM4\ARM_GCC_541\Debug\cy_gpio.o
- .debug_line    0x0000521a      0x33e .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
- .debug_line    0x00005558      0x407 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
- .debug_line    0x0000595f      0x57e .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
- .debug_line    0x00005edd      0x4d9 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
- .debug_line    0x000063b6     0x1149 .\CortexM4\ARM_GCC_541\Debug\cy_scb_i2c.o
- .debug_line    0x000074ff      0xa60 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
- .debug_line    0x00007f5f      0x2dd .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
- .debug_line    0x0000823c      0x482 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
- .debug_line    0x000086be       0x89 .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o
- .debug_line    0x00008747      0xa5a .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
- .debug_line    0x000091a1      0x17e .\CortexM4\ARM_GCC_541\Debug\cy_device.o
- .debug_line    0x0000931f      0x5af .\CortexM4\ARM_GCC_541\Debug\cy_ble.o
- .debug_line    0x000098ce      0xa20 .\CortexM4\ARM_GCC_541\Debug\cy_ble_hal_pvt.o
- .debug_line    0x0000a2ee      0x77b .\CortexM4\ARM_GCC_541\Debug\cy_ble_gap.o
- .debug_line    0x0000aa69      0x85a .\CortexM4\ARM_GCC_541\Debug\cy_ble_gatt.o
- .debug_line    0x0000b2c3      0xacc .\CortexM4\ARM_GCC_541\Debug\cy_ble_event_handler.o
- .debug_line    0x0000bd8f      0x514 .\CortexM4\ARM_GCC_541\Debug\cy_ble_custom.o
- .debug_line    0x0000c2a3      0x469 .\CortexM4\ARM_GCC_541\Debug\event_groups.o
- .debug_line    0x0000c70c      0x2af .\CortexM4\ARM_GCC_541\Debug\list.o
- .debug_line    0x0000c9bb      0x968 .\CortexM4\ARM_GCC_541\Debug\queue.o
- .debug_line    0x0000d323      0xcd0 .\CortexM4\ARM_GCC_541\Debug\tasks.o
- .debug_line    0x0000dff3      0x524 .\CortexM4\ARM_GCC_541\Debug\timers.o
- .debug_line    0x0000e517      0x40d .\CortexM4\ARM_GCC_541\Debug\port.o
- .debug_line    0x0000e924      0x3e4 .\CortexM4\ARM_GCC_541\Debug\heap_4.o
- .debug_line    0x0000ed08      0x30c .\CortexM4\ARM_GCC_541\Debug\retarget.o
- .debug_line    0x0000f014      0x334 .\CortexM4\ARM_GCC_541\Debug\UART.o
- .debug_line    0x0000f348      0x4a1 .\CortexM4\ARM_GCC_541\Debug\CapSense_Control.o
- .debug_line    0x0000f7e9      0x595 .\CortexM4\ARM_GCC_541\Debug\CapSense_Processing.o
- .debug_line    0x0000fd7e      0x3e5 .\CortexM4\ARM_GCC_541\Debug\CapSense_Structure.o
- .debug_line    0x00010163      0x2da .\CortexM4\ARM_GCC_541\Debug\CapSense_Tuner.o
- .debug_line    0x0001043d      0x3b3 .\CortexM4\ARM_GCC_541\Debug\CapSense_Filter.o
- .debug_line    0x000107f0      0x988 .\CortexM4\ARM_GCC_541\Debug\CapSense_Sensing.o
- .debug_line    0x00011178      0x38e .\CortexM4\ARM_GCC_541\Debug\CapSense_INT.o
- .debug_line    0x00011506      0x7ef .\CortexM4\ARM_GCC_541\Debug\CapSense_SensingCSD_LL.o
- .debug_line    0x00011cf5      0x766 .\CortexM4\ARM_GCC_541\Debug\CapSense_SensingCSX_LL.o
- .debug_line    0x0001245b      0x29e .\CortexM4\ARM_GCC_541\Debug\CapSense_Centroid_LL.o
- .debug_line    0x000126f9      0x338 .\CortexM4\ARM_GCC_541\Debug\I2C_1.o
- .debug_line    0x00012a31       0x95 C:\Users\Austina\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_v3_0\Library\CapSense_Library_GCC_M4.a(CapSense_SmartSense_LL.o)
- .debug_line    0x00012ac6       0xdd C:\Users\Austina\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_v3_0\Library\CapSense_Library_GCC_M4.a(CapSense_SmartSense_SL.o)
+ .debug_line    0x0000008e      0x437 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+ .debug_line    0x000004c5      0x697 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
+ .debug_line    0x00000b5c      0x40a .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
+ .debug_line    0x00000f66      0x5b6 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
+ .debug_line    0x0000151c      0x6b1 .\CortexM4\ARM_GCC_541\Debug\motion_task.o
+ .debug_line    0x00001bcd      0x67e .\CortexM4\ARM_GCC_541\Debug\uart_task.o
+ .debug_line    0x0000224b     0x12d2 .\CortexM4\ARM_GCC_541\Debug\bmi160.o
+ .debug_line    0x0000351d      0x368 .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
+ .debug_line    0x00003885      0x251 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
+ .debug_line    0x00003ad6      0x141 .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
+ .debug_line    0x00003c17      0x399 .\CortexM4\ARM_GCC_541\Debug\BLE.o
+ .debug_line    0x00003fb0      0x36d .\CortexM4\ARM_GCC_541\Debug\BLE_config.o
+ .debug_line    0x0000431d      0x243 .\CortexM4\ARM_GCC_541\Debug\BLE_custom_config.o
+ .debug_line    0x00004560      0x7d4 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+ .debug_line    0x00004d34      0x4fa .\CortexM4\ARM_GCC_541\Debug\cy_gpio.o
+ .debug_line    0x0000522e      0x33e .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+ .debug_line    0x0000556c      0x407 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+ .debug_line    0x00005973      0x57e .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+ .debug_line    0x00005ef1      0x4d9 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+ .debug_line    0x000063ca     0x1149 .\CortexM4\ARM_GCC_541\Debug\cy_scb_i2c.o
+ .debug_line    0x00007513      0xa60 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+ .debug_line    0x00007f73      0x2dd .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
+ .debug_line    0x00008250      0x482 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
+ .debug_line    0x000086d2       0x89 .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o
+ .debug_line    0x0000875b      0xa5a .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
+ .debug_line    0x000091b5      0x17e .\CortexM4\ARM_GCC_541\Debug\cy_device.o
+ .debug_line    0x00009333      0x5af .\CortexM4\ARM_GCC_541\Debug\cy_ble.o
+ .debug_line    0x000098e2      0xa20 .\CortexM4\ARM_GCC_541\Debug\cy_ble_hal_pvt.o
+ .debug_line    0x0000a302      0x77b .\CortexM4\ARM_GCC_541\Debug\cy_ble_gap.o
+ .debug_line    0x0000aa7d      0x85a .\CortexM4\ARM_GCC_541\Debug\cy_ble_gatt.o
+ .debug_line    0x0000b2d7      0xacc .\CortexM4\ARM_GCC_541\Debug\cy_ble_event_handler.o
+ .debug_line    0x0000bda3      0x514 .\CortexM4\ARM_GCC_541\Debug\cy_ble_custom.o
+ .debug_line    0x0000c2b7      0x469 .\CortexM4\ARM_GCC_541\Debug\event_groups.o
+ .debug_line    0x0000c720      0x2af .\CortexM4\ARM_GCC_541\Debug\list.o
+ .debug_line    0x0000c9cf      0x968 .\CortexM4\ARM_GCC_541\Debug\queue.o
+ .debug_line    0x0000d337      0xcd0 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+ .debug_line    0x0000e007      0x524 .\CortexM4\ARM_GCC_541\Debug\timers.o
+ .debug_line    0x0000e52b      0x40d .\CortexM4\ARM_GCC_541\Debug\port.o
+ .debug_line    0x0000e938      0x3e4 .\CortexM4\ARM_GCC_541\Debug\heap_4.o
+ .debug_line    0x0000ed1c      0x30c .\CortexM4\ARM_GCC_541\Debug\retarget.o
+ .debug_line    0x0000f028      0x334 .\CortexM4\ARM_GCC_541\Debug\UART.o
+ .debug_line    0x0000f35c      0x4a1 .\CortexM4\ARM_GCC_541\Debug\CapSense_Control.o
+ .debug_line    0x0000f7fd      0x595 .\CortexM4\ARM_GCC_541\Debug\CapSense_Processing.o
+ .debug_line    0x0000fd92      0x3e5 .\CortexM4\ARM_GCC_541\Debug\CapSense_Structure.o
+ .debug_line    0x00010177      0x2da .\CortexM4\ARM_GCC_541\Debug\CapSense_Tuner.o
+ .debug_line    0x00010451      0x3b3 .\CortexM4\ARM_GCC_541\Debug\CapSense_Filter.o
+ .debug_line    0x00010804      0x988 .\CortexM4\ARM_GCC_541\Debug\CapSense_Sensing.o
+ .debug_line    0x0001118c      0x38e .\CortexM4\ARM_GCC_541\Debug\CapSense_INT.o
+ .debug_line    0x0001151a      0x7ef .\CortexM4\ARM_GCC_541\Debug\CapSense_SensingCSD_LL.o
+ .debug_line    0x00011d09      0x766 .\CortexM4\ARM_GCC_541\Debug\CapSense_SensingCSX_LL.o
+ .debug_line    0x0001246f      0x29e .\CortexM4\ARM_GCC_541\Debug\CapSense_Centroid_LL.o
+ .debug_line    0x0001270d      0x338 .\CortexM4\ARM_GCC_541\Debug\I2C_1.o
+ .debug_line    0x00012a45       0x95 C:\Users\Austina\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_v3_0\Library\CapSense_Library_GCC_M4.a(CapSense_SmartSense_LL.o)
+ .debug_line    0x00012ada       0xdd C:\Users\Austina\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_v3_0\Library\CapSense_Library_GCC_M4.a(CapSense_SmartSense_SL.o)
 
 .debug_info     0x00000000    0x60cd8
  .debug_info    0x00000000       0x8e .\CortexM4\ARM_GCC_541\Debug\startup_psoc6_01_cm4.o
- .debug_info    0x0000008e     0x1b01 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
- .debug_info    0x00001b8f     0x2636 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
- .debug_info    0x000041c5     0x25d6 .\CortexM4\ARM_GCC_541\Debug\uart_task.o
- .debug_info    0x0000679b      0xc68 .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
- .debug_info    0x00007403     0x1eec .\CortexM4\ARM_GCC_541\Debug\motion_task.o
- .debug_info    0x000092ef     0x1bb3 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+ .debug_info    0x0000008e     0x1bb3 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+ .debug_info    0x00001c41     0x2636 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
+ .debug_info    0x00004277      0xc68 .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
+ .debug_info    0x00004edf     0x1b01 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
+ .debug_info    0x000069e0     0x1eec .\CortexM4\ARM_GCC_541\Debug\motion_task.o
+ .debug_info    0x000088cc     0x25d6 .\CortexM4\ARM_GCC_541\Debug\uart_task.o
  .debug_info    0x0000aea2     0x696e .\CortexM4\ARM_GCC_541\Debug\bmi160.o
  .debug_info    0x00011810      0xf55 .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
  .debug_info    0x00012765      0x96c .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
@@ -9725,12 +9724,12 @@ OUTPUT(C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Central_Remote.cyds
 
 .debug_abbrev   0x00000000     0x7e01
  .debug_abbrev  0x00000000       0x14 .\CortexM4\ARM_GCC_541\Debug\startup_psoc6_01_cm4.o
- .debug_abbrev  0x00000014      0x2f5 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
- .debug_abbrev  0x00000309      0x320 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
- .debug_abbrev  0x00000629      0x33c .\CortexM4\ARM_GCC_541\Debug\uart_task.o
- .debug_abbrev  0x00000965      0x1f0 .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
- .debug_abbrev  0x00000b55      0x339 .\CortexM4\ARM_GCC_541\Debug\motion_task.o
- .debug_abbrev  0x00000e8e      0x23a .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+ .debug_abbrev  0x00000014      0x23a .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+ .debug_abbrev  0x0000024e      0x320 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
+ .debug_abbrev  0x0000056e      0x1f0 .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
+ .debug_abbrev  0x0000075e      0x2f5 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
+ .debug_abbrev  0x00000a53      0x339 .\CortexM4\ARM_GCC_541\Debug\motion_task.o
+ .debug_abbrev  0x00000d8c      0x33c .\CortexM4\ARM_GCC_541\Debug\uart_task.o
  .debug_abbrev  0x000010c8      0x273 .\CortexM4\ARM_GCC_541\Debug\bmi160.o
  .debug_abbrev  0x0000133b      0x209 .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
  .debug_abbrev  0x00001544       0xe3 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
@@ -9784,17 +9783,17 @@ OUTPUT(C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Central_Remote.cyds
  .debug_aranges
                 0x00000000       0x20 .\CortexM4\ARM_GCC_541\Debug\startup_psoc6_01_cm4.o
  .debug_aranges
-                0x00000020       0x28 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
+                0x00000020       0x40 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
  .debug_aranges
-                0x00000048       0x48 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
+                0x00000060       0x48 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
  .debug_aranges
-                0x00000090       0x28 .\CortexM4\ARM_GCC_541\Debug\uart_task.o
+                0x000000a8       0x20 .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
  .debug_aranges
-                0x000000b8       0x20 .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
+                0x000000c8       0x28 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
  .debug_aranges
-                0x000000d8       0x40 .\CortexM4\ARM_GCC_541\Debug\motion_task.o
+                0x000000f0       0x40 .\CortexM4\ARM_GCC_541\Debug\motion_task.o
  .debug_aranges
-                0x00000118       0x40 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+                0x00000130       0x28 .\CortexM4\ARM_GCC_541\Debug\uart_task.o
  .debug_aranges
                 0x00000158      0x458 .\CortexM4\ARM_GCC_541\Debug\bmi160.o
  .debug_aranges
@@ -9893,12 +9892,12 @@ OUTPUT(C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Central_Remote.cyds
                 0x00001b80       0x30 C:\Users\Austina\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_v3_0\Library\CapSense_Library_GCC_M4.a(CapSense_SmartSense_SL.o)
 
 .debug_loc      0x00000000    0x1ca2c
- .debug_loc     0x00000000       0x96 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
- .debug_loc     0x00000096      0x3b9 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
- .debug_loc     0x0000044f       0xd6 .\CortexM4\ARM_GCC_541\Debug\uart_task.o
- .debug_loc     0x00000525       0x74 .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
- .debug_loc     0x00000599      0x453 .\CortexM4\ARM_GCC_541\Debug\motion_task.o
- .debug_loc     0x000009ec      0x1fe .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+ .debug_loc     0x00000000      0x1fe .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+ .debug_loc     0x000001fe      0x3b9 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
+ .debug_loc     0x000005b7       0x74 .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
+ .debug_loc     0x0000062b       0x96 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
+ .debug_loc     0x000006c1      0x453 .\CortexM4\ARM_GCC_541\Debug\motion_task.o
+ .debug_loc     0x00000b14       0xd6 .\CortexM4\ARM_GCC_541\Debug\uart_task.o
  .debug_loc     0x00000bea     0x6b95 .\CortexM4\ARM_GCC_541\Debug\bmi160.o
  .debug_loc     0x0000777f       0x87 .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
  .debug_loc     0x00007806       0x6d .\CortexM4\ARM_GCC_541\Debug\BLE.o
@@ -9943,12 +9942,12 @@ OUTPUT(C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Central_Remote.cyds
  .debug_loc     0x0001c908      0x124 C:\Users\Austina\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_v3_0\Library\CapSense_Library_GCC_M4.a(CapSense_SmartSense_SL.o)
 
 .debug_ranges   0x00000000     0x1a20
- .debug_ranges  0x00000000       0x18 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
- .debug_ranges  0x00000018       0x50 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
- .debug_ranges  0x00000068       0x18 .\CortexM4\ARM_GCC_541\Debug\uart_task.o
- .debug_ranges  0x00000080       0x10 .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
- .debug_ranges  0x00000090       0x30 .\CortexM4\ARM_GCC_541\Debug\motion_task.o
- .debug_ranges  0x000000c0       0x48 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+ .debug_ranges  0x00000000       0x48 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+ .debug_ranges  0x00000048       0x50 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
+ .debug_ranges  0x00000098       0x10 .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
+ .debug_ranges  0x000000a8       0x18 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
+ .debug_ranges  0x000000c0       0x30 .\CortexM4\ARM_GCC_541\Debug\motion_task.o
+ .debug_ranges  0x000000f0       0x18 .\CortexM4\ARM_GCC_541\Debug\uart_task.o
  .debug_ranges  0x00000108      0x448 .\CortexM4\ARM_GCC_541\Debug\bmi160.o
  .debug_ranges  0x00000550       0x18 .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
  .debug_ranges  0x00000568       0x18 .\CortexM4\ARM_GCC_541\Debug\BLE.o
@@ -9993,121 +9992,121 @@ OUTPUT(C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Central_Remote.cyds
  .debug_ranges  0x000019e8       0x18 C:\Users\Austina\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_v3_0\Library\CapSense_Library_GCC_M4.a(CapSense_SmartSense_LL.o)
  .debug_ranges  0x00001a00       0x20 C:\Users\Austina\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_v3_0\Library\CapSense_Library_GCC_M4.a(CapSense_SmartSense_SL.o)
 
-.debug_str      0x00000000    0x1cd42
- .debug_str     0x00000000     0x21a8 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
-                               0x2290 (size before relaxing)
- .debug_str     0x000021a8     0x3385 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
-                               0x51bf (size before relaxing)
- .debug_str     0x0000552d     0x141c .\CortexM4\ARM_GCC_541\Debug\uart_task.o
-                               0x358b (size before relaxing)
- .debug_str     0x00006949      0x10c .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
-                                0xe21 (size before relaxing)
- .debug_str     0x00006a55      0x59f .\CortexM4\ARM_GCC_541\Debug\motion_task.o
-                               0x278d (size before relaxing)
- .debug_str     0x00006ff4      0xb57 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+.debug_str      0x00000000    0x1cd56
+ .debug_str     0x00000000     0x230c .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
                                0x23e4 (size before relaxing)
- .debug_str     0x00007b4b     0x1751 .\CortexM4\ARM_GCC_541\Debug\bmi160.o
+ .debug_str     0x0000230c     0x4991 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
+                               0x51c3 (size before relaxing)
+ .debug_str     0x00006c9d      0x133 .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
+                                0xe25 (size before relaxing)
+ .debug_str     0x00006dd0      0x452 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
+                               0x2294 (size before relaxing)
+ .debug_str     0x00007222      0x7f4 .\CortexM4\ARM_GCC_541\Debug\motion_task.o
+                               0x2791 (size before relaxing)
+ .debug_str     0x00007a16      0x149 .\CortexM4\ARM_GCC_541\Debug\uart_task.o
+                               0x358f (size before relaxing)
+ .debug_str     0x00007b5f     0x1751 .\CortexM4\ARM_GCC_541\Debug\bmi160.o
                                0x1df2 (size before relaxing)
- .debug_str     0x0000929c       0x68 .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
+ .debug_str     0x000092b0       0x68 .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
                                0x1053 (size before relaxing)
- .debug_str     0x00009304       0x50 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
+ .debug_str     0x00009318       0x50 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
                                0x17da (size before relaxing)
- .debug_str     0x00009354       0x30 .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
+ .debug_str     0x00009368       0x30 .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
                                 0x1cd (size before relaxing)
- .debug_str     0x00009384      0xd1c .\CortexM4\ARM_GCC_541\Debug\BLE.o
+ .debug_str     0x00009398      0xd1c .\CortexM4\ARM_GCC_541\Debug\BLE.o
                                0x3b3a (size before relaxing)
- .debug_str     0x0000a0a0      0x16d .\CortexM4\ARM_GCC_541\Debug\BLE_config.o
+ .debug_str     0x0000a0b4      0x16d .\CortexM4\ARM_GCC_541\Debug\BLE_config.o
                                0x3854 (size before relaxing)
- .debug_str     0x0000a20d       0xd6 .\CortexM4\ARM_GCC_541\Debug\BLE_custom_config.o
+ .debug_str     0x0000a221       0xd6 .\CortexM4\ARM_GCC_541\Debug\BLE_custom_config.o
                                 0xbc8 (size before relaxing)
- .debug_str     0x0000a2e3     0x1079 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+ .debug_str     0x0000a2f7     0x1079 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
                                0x2dcc (size before relaxing)
- .debug_str     0x0000b35c     0x5b9d .\CortexM4\ARM_GCC_541\Debug\cy_gpio.o
+ .debug_str     0x0000b370     0x5b9d .\CortexM4\ARM_GCC_541\Debug\cy_gpio.o
                                0x6405 (size before relaxing)
- .debug_str     0x00010ef9       0xf3 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+ .debug_str     0x00010f0d       0xf3 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
                                 0x98e (size before relaxing)
- .debug_str     0x00010fec       0xe7 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+ .debug_str     0x00011000       0xe7 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
                                 0xb7b (size before relaxing)
- .debug_str     0x000110d3      0x310 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+ .debug_str     0x000110e7      0x310 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
                                0x209d (size before relaxing)
- .debug_str     0x000113e3      0x1be .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+ .debug_str     0x000113f7      0x1be .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
                                 0xcb7 (size before relaxing)
- .debug_str     0x000115a1      0xb22 .\CortexM4\ARM_GCC_541\Debug\cy_scb_i2c.o
+ .debug_str     0x000115b5      0xb22 .\CortexM4\ARM_GCC_541\Debug\cy_scb_i2c.o
                                0x1af9 (size before relaxing)
- .debug_str     0x000120c3      0x715 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+ .debug_str     0x000120d7      0x715 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
                                0x16e7 (size before relaxing)
- .debug_str     0x000127d8       0xf0 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
+ .debug_str     0x000127ec       0xf0 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
                                0x196e (size before relaxing)
- .debug_str     0x000128c8      0xa82 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
+ .debug_str     0x000128dc      0xa82 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
                                0x1cc1 (size before relaxing)
- .debug_str     0x0001334a     0x1181 .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
+ .debug_str     0x0001335e     0x1181 .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
                                0x2b88 (size before relaxing)
- .debug_str     0x000144cb       0x5d .\CortexM4\ARM_GCC_541\Debug\cy_device.o
+ .debug_str     0x000144df       0x5d .\CortexM4\ARM_GCC_541\Debug\cy_device.o
                                 0x7db (size before relaxing)
- .debug_str     0x00014528     0x1add .\CortexM4\ARM_GCC_541\Debug\cy_ble.o
+ .debug_str     0x0001453c     0x1add .\CortexM4\ARM_GCC_541\Debug\cy_ble.o
                                0x5c78 (size before relaxing)
- .debug_str     0x00016005      0xd5f .\CortexM4\ARM_GCC_541\Debug\cy_ble_hal_pvt.o
+ .debug_str     0x00016019      0xd5f .\CortexM4\ARM_GCC_541\Debug\cy_ble_hal_pvt.o
                                0x4669 (size before relaxing)
- .debug_str     0x00016d64      0x54b .\CortexM4\ARM_GCC_541\Debug\cy_ble_gap.o
+ .debug_str     0x00016d78      0x54b .\CortexM4\ARM_GCC_541\Debug\cy_ble_gap.o
                                0x4d45 (size before relaxing)
- .debug_str     0x000172af     0x1017 .\CortexM4\ARM_GCC_541\Debug\cy_ble_gatt.o
+ .debug_str     0x000172c3     0x1017 .\CortexM4\ARM_GCC_541\Debug\cy_ble_gatt.o
                                0x790e (size before relaxing)
- .debug_str     0x000182c6      0xab8 .\CortexM4\ARM_GCC_541\Debug\cy_ble_event_handler.o
+ .debug_str     0x000182da      0xab8 .\CortexM4\ARM_GCC_541\Debug\cy_ble_event_handler.o
                                0x898c (size before relaxing)
- .debug_str     0x00018d7e      0x20b .\CortexM4\ARM_GCC_541\Debug\cy_ble_custom.o
+ .debug_str     0x00018d92      0x20b .\CortexM4\ARM_GCC_541\Debug\cy_ble_custom.o
                                0x5527 (size before relaxing)
- .debug_str     0x00018f89      0x439 .\CortexM4\ARM_GCC_541\Debug\event_groups.o
+ .debug_str     0x00018f9d      0x439 .\CortexM4\ARM_GCC_541\Debug\event_groups.o
                                 0x6ba (size before relaxing)
- .debug_str     0x000193c2       0xbb .\CortexM4\ARM_GCC_541\Debug\list.o
+ .debug_str     0x000193d6       0xbb .\CortexM4\ARM_GCC_541\Debug\list.o
                                 0x359 (size before relaxing)
- .debug_str     0x0001947d      0x53e .\CortexM4\ARM_GCC_541\Debug\queue.o
+ .debug_str     0x00019491      0x53e .\CortexM4\ARM_GCC_541\Debug\queue.o
                                 0x975 (size before relaxing)
- .debug_str     0x000199bb      0x914 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+ .debug_str     0x000199cf      0x914 .\CortexM4\ARM_GCC_541\Debug\tasks.o
                                 0xf18 (size before relaxing)
- .debug_str     0x0001a2cf      0x42a .\CortexM4\ARM_GCC_541\Debug\timers.o
+ .debug_str     0x0001a2e3      0x42a .\CortexM4\ARM_GCC_541\Debug\timers.o
                                 0x8e4 (size before relaxing)
- .debug_str     0x0001a6f9      0x198 .\CortexM4\ARM_GCC_541\Debug\port.o
+ .debug_str     0x0001a70d      0x198 .\CortexM4\ARM_GCC_541\Debug\port.o
                                 0x520 (size before relaxing)
- .debug_str     0x0001a891      0x1e4 .\CortexM4\ARM_GCC_541\Debug\heap_4.o
+ .debug_str     0x0001a8a5      0x1e4 .\CortexM4\ARM_GCC_541\Debug\heap_4.o
                                 0x442 (size before relaxing)
- .debug_str     0x0001aa75       0x43 .\CortexM4\ARM_GCC_541\Debug\retarget.o
+ .debug_str     0x0001aa89       0x43 .\CortexM4\ARM_GCC_541\Debug\retarget.o
                                 0xcf4 (size before relaxing)
- .debug_str     0x0001aab8       0x37 .\CortexM4\ARM_GCC_541\Debug\UART.o
+ .debug_str     0x0001aacc       0x37 .\CortexM4\ARM_GCC_541\Debug\UART.o
                                0x200e (size before relaxing)
- .debug_str     0x0001aaef      0x848 .\CortexM4\ARM_GCC_541\Debug\CapSense_Control.o
+ .debug_str     0x0001ab03      0x848 .\CortexM4\ARM_GCC_541\Debug\CapSense_Control.o
                                0x11bc (size before relaxing)
- .debug_str     0x0001b337      0x281 .\CortexM4\ARM_GCC_541\Debug\CapSense_Processing.o
+ .debug_str     0x0001b34b      0x281 .\CortexM4\ARM_GCC_541\Debug\CapSense_Processing.o
                                 0xb00 (size before relaxing)
- .debug_str     0x0001b5b8      0x1cd .\CortexM4\ARM_GCC_541\Debug\CapSense_Structure.o
+ .debug_str     0x0001b5cc      0x1cd .\CortexM4\ARM_GCC_541\Debug\CapSense_Structure.o
                                 0xabc (size before relaxing)
- .debug_str     0x0001b785      0x135 .\CortexM4\ARM_GCC_541\Debug\CapSense_Tuner.o
+ .debug_str     0x0001b799      0x135 .\CortexM4\ARM_GCC_541\Debug\CapSense_Tuner.o
                                 0xd25 (size before relaxing)
- .debug_str     0x0001b8ba      0x233 .\CortexM4\ARM_GCC_541\Debug\CapSense_Filter.o
+ .debug_str     0x0001b8ce      0x233 .\CortexM4\ARM_GCC_541\Debug\CapSense_Filter.o
                                 0x8a8 (size before relaxing)
- .debug_str     0x0001baed      0x92b .\CortexM4\ARM_GCC_541\Debug\CapSense_Sensing.o
+ .debug_str     0x0001bb01      0x92b .\CortexM4\ARM_GCC_541\Debug\CapSense_Sensing.o
                                0x8166 (size before relaxing)
- .debug_str     0x0001c418       0xf6 .\CortexM4\ARM_GCC_541\Debug\CapSense_INT.o
+ .debug_str     0x0001c42c       0xf6 .\CortexM4\ARM_GCC_541\Debug\CapSense_INT.o
                                0x1041 (size before relaxing)
- .debug_str     0x0001c50e      0x2b5 .\CortexM4\ARM_GCC_541\Debug\CapSense_SensingCSD_LL.o
+ .debug_str     0x0001c522      0x2b5 .\CortexM4\ARM_GCC_541\Debug\CapSense_SensingCSD_LL.o
                                0x7ec7 (size before relaxing)
- .debug_str     0x0001c7c3      0x2ba .\CortexM4\ARM_GCC_541\Debug\CapSense_SensingCSX_LL.o
+ .debug_str     0x0001c7d7      0x2ba .\CortexM4\ARM_GCC_541\Debug\CapSense_SensingCSX_LL.o
                                0x7e8c (size before relaxing)
- .debug_str     0x0001ca7d       0x98 .\CortexM4\ARM_GCC_541\Debug\CapSense_Centroid_LL.o
+ .debug_str     0x0001ca91       0x98 .\CortexM4\ARM_GCC_541\Debug\CapSense_Centroid_LL.o
                                 0x387 (size before relaxing)
- .debug_str     0x0001cb15       0x4a .\CortexM4\ARM_GCC_541\Debug\I2C_1.o
+ .debug_str     0x0001cb29       0x4a .\CortexM4\ARM_GCC_541\Debug\I2C_1.o
                                0x1e9c (size before relaxing)
- .debug_str     0x0001cb5f      0x176 C:\Users\Austina\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_v3_0\Library\CapSense_Library_GCC_M4.a(CapSense_SmartSense_LL.o)
+ .debug_str     0x0001cb73      0x176 C:\Users\Austina\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_v3_0\Library\CapSense_Library_GCC_M4.a(CapSense_SmartSense_LL.o)
                                 0x2b6 (size before relaxing)
- .debug_str     0x0001ccd5       0x6d C:\Users\Austina\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_v3_0\Library\CapSense_Library_GCC_M4.a(CapSense_SmartSense_SL.o)
+ .debug_str     0x0001cce9       0x6d C:\Users\Austina\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_v3_0\Library\CapSense_Library_GCC_M4.a(CapSense_SmartSense_SL.o)
                                 0x31a (size before relaxing)
 
 .debug_frame    0x00000000    0x16c00
- .debug_frame   0x00000000       0x54 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
- .debug_frame   0x00000054       0xc0 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
- .debug_frame   0x00000114       0x4c .\CortexM4\ARM_GCC_541\Debug\uart_task.o
- .debug_frame   0x00000160       0x30 .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
- .debug_frame   0x00000190       0xdc .\CortexM4\ARM_GCC_541\Debug\motion_task.o
- .debug_frame   0x0000026c       0x84 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+ .debug_frame   0x00000000       0x84 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+ .debug_frame   0x00000084       0xc0 .\CortexM4\ARM_GCC_541\Debug\ble_task.o
+ .debug_frame   0x00000144       0x30 .\CortexM4\ARM_GCC_541\Debug\capsense_task.o
+ .debug_frame   0x00000174       0x54 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
+ .debug_frame   0x000001c8       0xdc .\CortexM4\ARM_GCC_541\Debug\motion_task.o
+ .debug_frame   0x000002a4       0x4c .\CortexM4\ARM_GCC_541\Debug\uart_task.o
  .debug_frame   0x000002f0     0x11cc .\CortexM4\ARM_GCC_541\Debug\bmi160.o
  .debug_frame   0x000014bc       0x3c .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
  .debug_frame   0x000014f8       0x48 .\CortexM4\ARM_GCC_541\Debug\BLE.o

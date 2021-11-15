@@ -18,47 +18,71 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)\Source Files\motion_task.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\ble_task.c">
 <ExpandedNodeIds>
 <v>BT_Peripheral_Controller-000</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote</v>
 <v>BT_Peripheral_Controller-000\BT_Central_Remote\TopDesign</v>
 <v>BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)</v>
 <v>BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)\Header Files</v>
 <v>BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)\Source Files</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller</v>
 <v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\TopDesign</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM0p (Core 0)</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM0p (Core 0)\Source Files</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM0p (Core 0)\Source Files\main_cm0p.c</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\ARM GCC Generic</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files\ble_task.h</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files\capsense_task.h</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files\common.h</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files\ezI2C_task.h</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files\motor_task.h</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files\pwm_task.h</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files\servo_slave_i2c_task.h</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files\uart_task.h</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\ARM GCC Generic</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\ble_task.c</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\capsense_task.c</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\ezI2C_task.c</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\main_cm4.c</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\motor_task.c</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\pwm_task.c</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\servo_slave_i2c_task.c</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\uart_task.c</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
-<v>BT_Peripheral_Controller-000</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\TopDesign</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\BT_Central_Remote.cydwr</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CM0p (Core 0)</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)\ARM GCC Generic</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)\ARM IAR Generic</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)\ARM MDK Generic</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)\Header Files</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)\Header Files\ble_task.h</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)\Header Files\capsense_task.h</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)\Header Files\common.h</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)\Header Files\FreeRTOSConfig.h</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)\Header Files\motion_task.h</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)\Header Files\uart_task.h</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)\IMU_BMI160</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)\Source Files</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)\Source Files\ARM GCC Generic</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)\Source Files\ARM IAR Generic</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)\Source Files\ARM MDK Generic</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)\Source Files\ble_task.c</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)\Source Files\capsense_task.c</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)\Source Files\main_cm4.c</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)\Source Files\motion_task.c</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)\Source Files\system_psoc6_cm4.c</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CM4 (Core 1)\Source Files\uart_task.c</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\Shared Files</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\Generated_Source</v>
-<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\ARM GCC Generic</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\ARM GCC Generic\cy8c6xx7_cm4_dual.ld</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\ARM IAR Generic</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\ARM MDK Generic</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files\ble_task.h</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files\capsense_task.h</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files\common.h</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files\ezI2C_task.h</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files\FreeRTOSConfig.h</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files\motor_task.h</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files\pwm_task.h</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files\servo_slave_i2c_task.h</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files\uart_task.h</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\ARM GCC Generic</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\ARM GCC Generic\startup_psoc6_01_cm4.S</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\ARM IAR Generic</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\ARM MDK Generic</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\ble_task.c</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\capsense_task.c</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\ezI2C_task.c</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\main_cm4.c</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\motor_task.c</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\pwm_task.c</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\servo_slave_i2c_task.c</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\system_psoc6_cm4.c</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\uart_task.c</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\Shared Files</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -530,34 +554,6 @@
 <VisibleNodeIds>
 <v>BT_Peripheral_Controller-000</v>
 <v>BT_Peripheral_Controller-000\BT_Central_Remote</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\BLE.lst</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\BLE_config.lst</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\BLE_custom_config.lst</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_Centroid_LL.lst</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_Control.lst</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_Filter.lst</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_INT.lst</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_Processing.lst</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_Sensing.lst</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_SensingCSD_LL.lst</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_SensingCSX_LL.lst</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_Structure.lst</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_Tuner.lst</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble.lst</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_aios.lst</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_ancs.lst</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_ans.lst</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_bas.lst</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_bcs.lst</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_bls.lst</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_bms.lst</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_bts.lst</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_cgms.lst</v>
-<v>BT_Peripheral_Controller-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_clk.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -643,6 +639,21 @@
 <Unloaded />
 <OpenDocs>
 <name v=".\TopDesign\TopDesign.cysch" />
+<name v=".\Src\ezI2C_task.h" />
+<name v=".\Src\uart_task.h" />
+<name v=".\Src\motor_task.h" />
+<name v=".\Src\ble_task.c" />
+<name v=".\Src\capsense_task.c" />
+<name v=".\Src\ezI2C_task.c" />
+<name v=".\Src\main_cm4.c" />
+<name v=".\Src\motor_task.c" />
+<name v=".\Src\pwm_task.c" />
+<name v=".\Src\servo_slave_i2c_task.c" />
+<name v=".\Src\uart_task.c" />
+<name v=".\cy8c6xx7_cm4_dual.ld" />
+<name v=".\gcc\startup_psoc6_01_cm4.S" />
+<name v=".\Src\pwm_task.h" />
+<name v=".\FreeRTOSConfig.h" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -650,7 +661,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="587, 391" SelectedTabbedMdiWindow="b60d421d-e97d-4bfd-8fc0-514aed37c5c0"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="ed9336ec-60ed-40c8-8473-b06c5b92c52c" /><DocumentWindow Key="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Peripheral_Controller.cydsn\TopDesign\TopDesign.cysch" Guid="b60d421d-e97d-4bfd-8fc0-514aed37c5c0" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="748, 595" SelectedTabbedMdiWindow="2918f0d6-5b12-43a5-8ad0-430f4ddaea45"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="ed9336ec-60ed-40c8-8473-b06c5b92c52c" /><DocumentWindow Key="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Peripheral_Controller.cydsn\TopDesign\TopDesign.cysch" Guid="b60d421d-e97d-4bfd-8fc0-514aed37c5c0" /><ToolWindow Key="Output Window Plugin:7305390e-eabe-4963-b21f-3a0f11b4b1d5:Output Window" Guid="73de7761-3dbb-47a0-9a93-9d6338c3a45f" /><ToolWindow Key="CyNoticeWindow:44d3d453-9474-4f2b-b928-4356f496bef0:Notice Window" Guid="03a3c053-f83a-4e52-80fe-5c69f4f00d6c" /><DocumentWindow Key="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Peripheral_Controller.cydsn\Src\ezI2C_task.h" Guid="ca127982-1db8-4e25-99b0-1ef95de1fc1c" /><DocumentWindow Key="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Peripheral_Controller.cydsn\Src\uart_task.h" Guid="45fa4c6b-a416-49b3-a33b-95fc7b1eec16" /><DocumentWindow Key="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Peripheral_Controller.cydsn\Src\motor_task.h" Guid="ab026466-1a14-4b56-8bca-a9758132d874" /><DocumentWindow Key="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Peripheral_Controller.cydsn\Src\ble_task.c" Guid="43f675ca-225c-40f1-89da-ee3d9db2da18" /><DocumentWindow Key="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Peripheral_Controller.cydsn\Src\capsense_task.c" Guid="02987c3b-acbd-4fe1-88b8-9c9863fa2810" /><DocumentWindow Key="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Peripheral_Controller.cydsn\Src\ezI2C_task.c" Guid="d52ddf5e-a685-47a2-86de-b0ae409a7faf" /><DocumentWindow Key="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Peripheral_Controller.cydsn\Src\main_cm4.c" Guid="02e35b43-d351-4f69-8c13-43657530f239" /><DocumentWindow Key="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Peripheral_Controller.cydsn\Src\motor_task.c" Guid="3a33f985-7b98-441a-a3a5-8a210a501408" /><DocumentWindow Key="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Peripheral_Controller.cydsn\Src\pwm_task.c" Guid="40e621e9-7a4e-4a04-aba8-fc1cb6f95c25" /><DocumentWindow Key="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Peripheral_Controller.cydsn\Src\servo_slave_i2c_task.c" Guid="4b53e25c-5476-4623-9a92-4672db53d516" /><DocumentWindow Key="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Peripheral_Controller.cydsn\Src\uart_task.c" Guid="c493dffe-e820-419c-b892-4aa071bcaa40" /><DocumentWindow Key="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Peripheral_Controller.cydsn\cy8c6xx7_cm4_dual.ld" Guid="76c1c3ff-3817-4c86-a24e-29f6d71faa01" /><DocumentWindow Key="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Peripheral_Controller.cydsn\gcc\startup_psoc6_01_cm4.S" Guid="355cf04b-9159-427a-a15f-34cc253c9af1" /><DocumentWindow Key="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Peripheral_Controller.cydsn\Src\pwm_task.h" Guid="2918f0d6-5b12-43a5-8ad0-430f4ddaea45" /><DocumentWindow Key="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Peripheral_Controller.cydsn\FreeRTOSConfig.h" Guid="11a9dc8d-7829-4c21-8221-37e05d7124d2" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

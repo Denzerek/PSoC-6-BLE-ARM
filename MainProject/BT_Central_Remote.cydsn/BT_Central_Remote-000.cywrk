@@ -2,15 +2,14 @@
 <CyXmlSerializer>
 <!--This file is machine generated and read. It is not intended to be edited by hand.-->
 <!--Due to this, there is no schema for this file.-->
-<CyGuid_2867d519-54d2-4c01-9830-c51cb08bc3dd type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWorkspaceSerialize" version="5" xml_contents_version="3" name="BT_Peripheral_Controller-000" persistent="BT_Peripheral_Controller-000.cywrk" platform="NOT_USED">
-<current_project name=".\BT_Peripheral_Controller.cyprj" />
+<CyGuid_2867d519-54d2-4c01-9830-c51cb08bc3dd type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWorkspaceSerialize" version="5" xml_contents_version="3" name="BT_Central_Remote-000" persistent="BT_Central_Remote-000.cywrk" platform="NOT_USED">
+<current_project name=".\BT_Central_Remote.cyprj" />
 <wrkspc_folders />
 <files />
 <projects>
-<v>.\BT_Peripheral_Controller.cyprj</v>
-<v>..\BT_Central_Remote.cydsn\BT_Central_Remote.cyprj</v>
+<v>.\BT_Central_Remote.cyprj</v>
 </projects>
-<workspace_id v="74ba6409-8d2b-4b03-b27e-1d5507e5e57a" />
+<workspace_id v="4b107ce5-e41b-493e-a82c-5d661c684144" />
 <WriteAppVersionLastSavedWith v="4.4.0.80" />
 <WriteAppMarketingVersionLastSavedWith v="4.4" />
 <CyGuid_dcbd9771-0334-43dc-9cc3-fe99dc3c5316 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWorkspaceSerialize+CyPrjDependencyList" version="4">

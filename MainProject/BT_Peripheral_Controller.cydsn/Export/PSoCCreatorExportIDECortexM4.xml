@@ -36,27 +36,27 @@
     <Folders>
       <Folder BuildType="STRICT" Path="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Peripheral_Controller.cydsn">
         <Files Root="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Peripheral_Controller.cydsn">
-          <File BuildType="BUILD" Toolchain="">uart_task.h</File>
-          <File BuildType="BUILD" Toolchain="">pwm_task.h</File>
-          <File BuildType="BUILD" Toolchain="">motor_task.h</File>
-          <File BuildType="BUILD" Toolchain="">ezI2C_task.h</File>
-          <File BuildType="BUILD" Toolchain="">common.h</File>
-          <File BuildType="BUILD" Toolchain="">capsense_task.h</File>
-          <File BuildType="BUILD" Toolchain="">servo_slave_i2c_task.h</File>
-          <File BuildType="BUILD" Toolchain="">ble_task.h</File>
           <File BuildType="BUILD" Toolchain="">FreeRTOSConfig.h</File>
-          <File BuildType="BUILD" Toolchain="">main_cm4.c</File>
+          <File BuildType="BUILD" Toolchain="">Src\ble_task.h</File>
+          <File BuildType="BUILD" Toolchain="">Src\capsense_task.h</File>
+          <File BuildType="BUILD" Toolchain="">Src\common.h</File>
+          <File BuildType="BUILD" Toolchain="">Src\ezI2C_task.h</File>
+          <File BuildType="BUILD" Toolchain="">Src\motor_task.h</File>
+          <File BuildType="BUILD" Toolchain="">Src\pwm_task.h</File>
+          <File BuildType="BUILD" Toolchain="">Src\servo_slave_i2c_task.h</File>
+          <File BuildType="BUILD" Toolchain="">Src\uart_task.h</File>
           <File BuildType="BUILD" Toolchain="ARM GCC Generic">gcc\startup_psoc6_01_cm4.S</File>
           <File BuildType="BUILD" Toolchain="ARM IAR Generic">iar\startup_psoc6_01_cm4.s</File>
           <File BuildType="BUILD" Toolchain="ARM MDK Generic">mdk\startup_psoc6_01_cm4.s</File>
-          <File BuildType="BUILD" Toolchain="">uart_task.c</File>
-          <File BuildType="BUILD" Toolchain="">pwm_task.c</File>
-          <File BuildType="BUILD" Toolchain="">motor_task.c</File>
-          <File BuildType="BUILD" Toolchain="">ezI2C_task.c</File>
-          <File BuildType="BUILD" Toolchain="">capsense_task.c</File>
-          <File BuildType="BUILD" Toolchain="">servo_slave_i2c_task.c</File>
           <File BuildType="BUILD" Toolchain="">system_psoc6_cm4.c</File>
-          <File BuildType="BUILD" Toolchain="">ble_task.c</File>
+          <File BuildType="BUILD" Toolchain="">Src\ble_task.c</File>
+          <File BuildType="BUILD" Toolchain="">Src\capsense_task.c</File>
+          <File BuildType="BUILD" Toolchain="">Src\ezI2C_task.c</File>
+          <File BuildType="BUILD" Toolchain="">Src\main_cm4.c</File>
+          <File BuildType="BUILD" Toolchain="">Src\motor_task.c</File>
+          <File BuildType="BUILD" Toolchain="">Src\pwm_task.c</File>
+          <File BuildType="BUILD" Toolchain="">Src\servo_slave_i2c_task.c</File>
+          <File BuildType="BUILD" Toolchain="">Src\uart_task.c</File>
           <File BuildType="BUILD" Toolchain="ARM GCC Generic">cy8c6xx7_cm4_dual.ld</File>
           <File BuildType="BUILD" Toolchain="ARM IAR Generic">cy8c6xx7_cm4_dual.icf</File>
           <File BuildType="BUILD" Toolchain="ARM MDK Generic">cy8c6xx7_cm4_dual.scat</File>

@@ -12,7 +12,7 @@
 #include "ezI2C_task.h"
 #include "motor_task.h"
 
-void ezI2CTask(void * arg)
+void ezI2C_task(void * arg)
 {
     (void) arg;
     uint8_t motorPercent[2];

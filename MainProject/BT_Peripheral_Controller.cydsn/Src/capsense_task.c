@@ -13,7 +13,7 @@
 #include "capsense_task.h"
 #include "motor_task.h"
 
-void capsenseTask(void *arg)
+void capSense_task(void *arg)
 {
     (void) arg;
     

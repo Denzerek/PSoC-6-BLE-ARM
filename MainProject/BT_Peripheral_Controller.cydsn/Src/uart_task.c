@@ -32,7 +32,7 @@ static void UARTIsr()
 }
 
 
-void UartTask(void * arg)
+void uart_task(void * arg)
 {
     (void) arg;
     setvbuf(stdin,NULL,_IONBF,0);

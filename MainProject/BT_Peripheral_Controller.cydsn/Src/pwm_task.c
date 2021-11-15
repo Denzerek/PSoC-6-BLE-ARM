@@ -12,7 +12,7 @@
 
 #include "pwm_task.h"
 
-void pwmTask(void * arg)
+void pwm_task(void * arg)
 {
     (void) arg;
     

@@ -67,25 +67,25 @@ int main(void)
     pwmEventGroup = xEventGroupCreate(); 
     
     /* UART task for debug messages and UART control of motor position*/
-    xTaskCreate(UartTask,"UART TASK",UART_TASK_STACK_SIZE,0,UART_TASK_PRIORITY,0);
+    xTaskCreate(uart_task,"UART TASK",UART_TASK_STACK_SIZE,0,UART_TASK_PRIORITY,0);
     
     /* PWM Motor task that runs continuously to keep track of motor PWM*/
-    xTaskCreate(motorTask,"MOTOR TASK",MOTOR_TASK_STACK_SIZE,0,MOTOR_TASK_PRIORITY,0);
+    xTaskCreate(motor_task,"MOTOR TASK",MOTOR_TASK_STACK_SIZE,0,MOTOR_TASK_PRIORITY,0);
     
     /* EZ I2C task for motor PWM monitoring over BCP*/
-    xTaskCreate(ezI2CTask,"EZ I2C TASK",EZI2C_TASK_STACK_SIZE,0,EZI2C_TASK_PRIORITY,0);
+    xTaskCreate(ezI2C_task,"EZ I2C TASK",EZI2C_TASK_STACK_SIZE,0,EZI2C_TASK_PRIORITY,0);
     
     /* Capsense task that monitors onboard capsense slider and buttons*/
-    xTaskCreate(capsenseTask,"CAPSENSE TASK",CAPSENSE_TASK_STACK_SIZE,0,CAPSENSE_TASK_PRIORITY,0);
+    xTaskCreate(capSense_task,"CAPSENSE TASK",CAPSENSE_TASK_STACK_SIZE,0,CAPSENSE_TASK_PRIORITY,0);
     
     /* Slave communication task handling i2c transfer of commands to Arduino slave*/
     xTaskCreate(servo_slave_i2c_task,"ARDUINO COMM TASK",ARDUINO_COMM_TASK_STACK_SIZE,0,ARDUINO_COMM_TASK_PRIORITY,0);
     
     /* PWM task that runs continuously*/
-    xTaskCreate(pwmTask,"PWM TASK",PWM_TASK_STACK_SIZE,0,PWM_TASK_PRIORITY,0);
+    xTaskCreate(pwm_task,"PWM TASK",PWM_TASK_STACK_SIZE,0,PWM_TASK_PRIORITY,0);
     
     /* Ble task handling communication with CENTRAL for reception of motor positions*/
-    xTaskCreate(bleTask,"BLE TASK",BLE_TASK_STACK_SIZE,0,BLE_TASK_PRIORITY,0);
+    xTaskCreate(ble_task,"BLE TASK",BLE_TASK_STACK_SIZE,0,BLE_TASK_PRIORITY,0);
     
     /* Start the Scheduler*/
     vTaskStartScheduler();

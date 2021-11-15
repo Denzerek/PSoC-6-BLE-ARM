@@ -36,11 +36,11 @@
     <Folders>
       <Folder BuildType="STRICT" Path="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Central_Remote.cydsn">
         <Files Root="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Central_Remote.cydsn">
-          <File BuildType="BUILD" Toolchain="">main_cm0p.c</File>
           <File BuildType="BUILD" Toolchain="ARM GCC Generic">gcc\startup_psoc6_01_cm0plus.S</File>
           <File BuildType="BUILD" Toolchain="ARM IAR Generic">iar\startup_psoc6_01_cm0plus.s</File>
           <File BuildType="BUILD" Toolchain="ARM MDK Generic">mdk\startup_psoc6_01_cm0plus.s</File>
           <File BuildType="BUILD" Toolchain="">system_psoc6_cm0plus.c</File>
+          <File BuildType="BUILD" Toolchain="">Src\main_cm0p.c</File>
           <File BuildType="BUILD" Toolchain="ARM GCC Generic">cy8c6xx7_cm0plus.ld</File>
           <File BuildType="BUILD" Toolchain="ARM IAR Generic">cy8c6xx7_cm0plus.icf</File>
           <File BuildType="BUILD" Toolchain="ARM MDK Generic">cy8c6xx7_cm0plus.scat</File>

@@ -20,6 +20,6 @@
 #define ezi2cPrint(x)  { TRANSMITTER("[ EZI2C ] : ");TRANSMITTER(x);TRANSMITTER("\r\n");}
 #define ezi2cPrintf(x,...)  { TRANSMITTER("[ EZI2C ] : ");TRANSMITTER(x,__VA_ARGS__);TRANSMITTER("\r\n");}
 
-void ezI2CTask(void * arg);
+void ezI2C_task(void * arg);
 
 /* [] END OF FILE */

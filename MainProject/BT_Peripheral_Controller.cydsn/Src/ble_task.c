@@ -143,7 +143,7 @@ void bleInterruptNotify()
     
 }
 
-void bleTask(void * arg)
+void ble_task(void * arg)
 {
     (void)arg;
     

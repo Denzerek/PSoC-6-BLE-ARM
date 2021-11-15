@@ -83,7 +83,7 @@ static int inline percentToCompare(int percent)
     return compare;
 }
 
-void motorTask(void* arg)
+void motor_task(void* arg)
 {
     (void )arg;
     PWM_Message_t pwmMessage;

@@ -32,7 +32,7 @@ typedef struct{
 
 
 
-void bleTask(void* arg);
+void ble_task(void* arg);
 void updateMotorsGatt(motors_t motor,int8_t percent,uint8_t flags);
 void updateRelativeMotorPos(motors_t motor,int8_t percent,uint8_t flags);
 
