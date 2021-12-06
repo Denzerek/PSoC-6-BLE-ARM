@@ -761,5 +761,6 @@
     <Data key="CYDEV_VDDIO0" value="3.3" />
     <Data key="CYDEV_VDDIO1" value="3.3" />
     <Data key="CYDEV_VDDR_HVL" value="3.3" />
+    <Data key="CYDEV_VDDUSB" value="3.3" />
   </Group>
 </DesignWideResources>

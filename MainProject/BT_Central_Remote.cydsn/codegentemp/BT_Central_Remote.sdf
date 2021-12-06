@@ -1,10 +1,10 @@
 (DELAYFILE
  (SDFVERSION "IEEE 1497 4.0")
- (DATE "2021-10-31T08:07:12Z")
+ (DATE "2021-12-06T08:31:55Z")
  (DESIGN "BT_Central_Remote")
  (VENDOR "Cypress Semiconductor")
  (PROGRAM "PSoC Creator")
- (VERSION " 4.4")
+ (VERSION " 4.3")
  (DIVIDER .)
  (TIMESCALE 1 ns)
  (CELL

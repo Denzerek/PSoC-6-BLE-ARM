@@ -1,6 +1,6 @@
 -- Project:   C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Central_Remote.cydsn\BT_Central_Remote.cyprj
--- Generated: 10/31/2021 13:37:12
--- PSoC Creator  4.4
+-- Generated: 12/06/2021 14:01:55
+-- PSoC Creator  4.3
 
 ENTITY BT_Central_Remote IS
     PORT(
@@ -984,7 +984,7 @@ BEGIN
             pin_mode => "B",
             sio_grp_cnt => 0,
             slew_rate => "0",
-            use_annotation => "0",
+            use_annotation => "1",
             vtrip => "00",
             width => 1,
             in_clk_inv => 0,
@@ -1038,7 +1038,7 @@ BEGIN
             pin_mode => "B",
             sio_grp_cnt => 0,
             slew_rate => "0",
-            use_annotation => "0",
+            use_annotation => "1",
             vtrip => "00",
             width => 1,
             in_clk_inv => 0,
@@ -1612,7 +1612,7 @@ BEGIN
             pin_mode => "B",
             sio_grp_cnt => 0,
             slew_rate => "0",
-            use_annotation => "0",
+            use_annotation => "1",
             vtrip => "00",
             width => 1,
             in_clk_inv => 0,

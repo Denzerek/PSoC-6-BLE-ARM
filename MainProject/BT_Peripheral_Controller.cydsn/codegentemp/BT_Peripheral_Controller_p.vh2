@@ -1,6 +1,6 @@
 -- Project:   BT_Peripheral_Controller
--- Generated: 10/31/2021 18:59:32
--- PSoC Creator  4.4
+-- Generated: 12/06/2021 13:40:18
+-- PSoC Creator  4.3
 
 ENTITY BT_Peripheral_Controller IS
     PORT(
@@ -110,6 +110,12 @@ ARCHITECTURE __DEFAULT__ OF BT_Peripheral_Controller IS
     SIGNAL Net_179_ff16 : bit;
     ATTRIBUTE global_signal OF Net_179_ff16 : SIGNAL IS true;
     SIGNAL Net_21 : bit;
+    SIGNAL Net_235 : bit;
+    SIGNAL Net_236 : bit;
+    SIGNAL Net_237 : bit;
+    SIGNAL Net_238 : bit;
+    SIGNAL Net_239 : bit;
+    SIGNAL Net_240 : bit;
     SIGNAL Net_27 : bit;
     SIGNAL Net_28 : bit;
     SIGNAL Net_29 : bit;
@@ -119,7 +125,6 @@ ARCHITECTURE __DEFAULT__ OF BT_Peripheral_Controller IS
     SIGNAL Net_329 : bit;
     SIGNAL Net_33 : bit;
     SIGNAL Net_34 : bit;
-    SIGNAL Net_35 : bit;
     SIGNAL Net_43 : bit;
     SIGNAL Net_44 : bit;
     SIGNAL Net_45 : bit;
@@ -129,11 +134,6 @@ ARCHITECTURE __DEFAULT__ OF BT_Peripheral_Controller IS
     SIGNAL Net_48 : bit;
     SIGNAL Net_6 : bit;
     SIGNAL Net_7 : bit;
-    SIGNAL Net_90 : bit;
-    SIGNAL Net_91 : bit;
-    SIGNAL Net_92 : bit;
-    SIGNAL Net_93 : bit;
-    SIGNAL Net_96 : bit;
     SIGNAL Net_99 : bit;
     SIGNAL RED(0)__PA : bit;
     SIGNAL RED_USER_LED2(0)__PA : bit;
@@ -1153,7 +1153,7 @@ BEGIN
             pin_mode => "B",
             sio_grp_cnt => 0,
             slew_rate => "0",
-            use_annotation => "0",
+            use_annotation => "1",
             vtrip => "00",
             width => 1,
             in_clk_inv => 0,
@@ -1209,7 +1209,7 @@ BEGIN
             pin_mode => "B",
             sio_grp_cnt => 0,
             slew_rate => "0",
-            use_annotation => "0",
+            use_annotation => "1",
             vtrip => "00",
             width => 1,
             in_clk_inv => 0,
@@ -1400,7 +1400,7 @@ BEGIN
         PORT MAP(
             pa_out => SW(0)__PA,
             oe => open,
-            fb => Net_35,
+            fb => Net_240,
             pad_in => SW(0)_PAD,
             in_clock => open,
             in_clock_en => open,
@@ -1432,7 +1432,7 @@ BEGIN
             pin_mode => "B",
             sio_grp_cnt => 0,
             slew_rate => "0",
-            use_annotation => "0",
+            use_annotation => "1",
             vtrip => "00",
             width => 1,
             in_clk_inv => 0,
@@ -1488,7 +1488,7 @@ BEGIN
             pin_mode => "B",
             sio_grp_cnt => 0,
             slew_rate => "0",
-            use_annotation => "0",
+            use_annotation => "1",
             vtrip => "00",
             width => 1,
             in_clk_inv => 0,
@@ -1544,7 +1544,7 @@ BEGIN
             pin_mode => "B",
             sio_grp_cnt => 0,
             slew_rate => "0",
-            use_annotation => "0",
+            use_annotation => "1",
             vtrip => "00",
             width => 1,
             in_clk_inv => 0,
@@ -2120,7 +2120,7 @@ BEGIN
             pin_mode => "B",
             sio_grp_cnt => 0,
             slew_rate => "0",
-            use_annotation => "0",
+            use_annotation => "1",
             vtrip => "00",
             width => 1,
             in_clk_inv => 0,
@@ -2515,12 +2515,12 @@ BEGIN
             reload => '0',
             stop => '0',
             start => '0',
-            tr_underflow => Net_92,
-            tr_compare_match => Net_93,
-            tr_overflow => Net_91,
-            line_compl => Net_96,
+            tr_underflow => Net_237,
+            tr_compare_match => Net_238,
+            tr_overflow => Net_236,
+            line_compl => Net_239,
             line => Net_104,
-            interrupt => Net_90);
+            interrupt => Net_235);
 
     \I2C_ARD:SCB\:SCB
         GENERIC MAP(
@@ -2623,6 +2623,6 @@ BEGIN
         PORT MAP(
             q => Net_294,
             clk_en => open,
-            clock_0 => Net_35);
+            clock_0 => Net_240);
 
 END __DEFAULT__;

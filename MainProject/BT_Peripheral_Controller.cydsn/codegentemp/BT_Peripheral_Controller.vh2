@@ -2,7 +2,7 @@
 --	Conversion of BT_Peripheral_Controller.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Sun Oct 31 18:59:23 2021
+--	Mon Dec 06 13:40:09 2021
 --
 
 USE cypress.cypress.all;
@@ -42,14 +42,15 @@ SIGNAL \UART:Net_157\ : bit;
 SIGNAL Net_7 : bit;
 SIGNAL Net_6 : bit;
 SIGNAL \UART:Net_161\ : bit;
-SIGNAL Net_4 : bit;
+SIGNAL Net_2 : bit;
 SIGNAL Net_3 : bit;
+SIGNAL Net_4 : bit;
 SIGNAL Net_9 : bit;
 SIGNAL Net_10 : bit;
-SIGNAL Net_2 : bit;
 SIGNAL Net_137 : bit;
 SIGNAL tmpFB_0__M1_net_0 : bit;
 SIGNAL tmpIO_0__M1_net_0 : bit;
+TERMINAL Net_241 : bit;
 TERMINAL tmpSIOVREF__M1_net_0 : bit;
 SIGNAL Net_154 : bit;
 SIGNAL \PWM_1:swap\ : bit;
@@ -64,6 +65,7 @@ SIGNAL Net_135 : bit;
 SIGNAL Net_21 : bit;
 SIGNAL tmpFB_0__RED_USER_LED2_net_0 : bit;
 SIGNAL tmpIO_0__RED_USER_LED2_net_0 : bit;
+TERMINAL Net_220 : bit;
 TERMINAL tmpSIOVREF__RED_USER_LED2_net_0 : bit;
 SIGNAL \PWM_RED:swap\ : bit;
 SIGNAL \PWM_RED:count\ : bit;
@@ -105,7 +107,7 @@ SIGNAL \EZI2C:tmpFB_0__scl_net_0\ : bit;
 TERMINAL \EZI2C:tmpSIOVREF__scl_net_0\ : bit;
 SIGNAL \EZI2C:tmpFB_0__sda_net_0\ : bit;
 TERMINAL \EZI2C:tmpSIOVREF__sda_net_0\ : bit;
-SIGNAL Net_35 : bit;
+SIGNAL Net_240 : bit;
 SIGNAL tmpIO_0__SW_net_0 : bit;
 TERMINAL tmpSIOVREF__SW_net_0 : bit;
 SIGNAL Net_36 : bit;
@@ -125,19 +127,22 @@ SIGNAL Net_43 : bit;
 SIGNAL Net_99 : bit;
 SIGNAL tmpFB_0__RED_net_0 : bit;
 SIGNAL tmpIO_0__RED_net_0 : bit;
+TERMINAL Net_195 : bit;
 TERMINAL tmpSIOVREF__RED_net_0 : bit;
 SIGNAL Net_107 : bit;
 SIGNAL tmpFB_0__GREEN_net_0 : bit;
 SIGNAL tmpIO_0__GREEN_net_0 : bit;
+TERMINAL Net_224 : bit;
 TERMINAL tmpSIOVREF__GREEN_net_0 : bit;
 SIGNAL cy_tff_1 : bit;
 SIGNAL \mux_1:tmp__mux_1_reg\ : bit;
 SIGNAL Net_52 : bit;
 SIGNAL Net_100 : bit;
-SIGNAL Net_105 : bit;
+SIGNAL Net_229 : bit;
 SIGNAL Net_329 : bit;
 SIGNAL tmpFB_0__M2_net_0 : bit;
 SIGNAL tmpIO_0__M2_net_0 : bit;
+TERMINAL Net_243 : bit;
 TERMINAL tmpSIOVREF__M2_net_0 : bit;
 SIGNAL \PWM_2:swap\ : bit;
 SIGNAL \PWM_2:count\ : bit;
@@ -242,12 +247,12 @@ SIGNAL \Dimmer:count\ : bit;
 SIGNAL \Dimmer:reload\ : bit;
 SIGNAL \Dimmer:kill\ : bit;
 SIGNAL \Dimmer:start\ : bit;
-SIGNAL Net_92 : bit;
-SIGNAL Net_93 : bit;
-SIGNAL Net_91 : bit;
-SIGNAL Net_96 : bit;
+SIGNAL Net_237 : bit;
+SIGNAL Net_238 : bit;
+SIGNAL Net_236 : bit;
+SIGNAL Net_239 : bit;
 SIGNAL Net_104 : bit;
-SIGNAL Net_90 : bit;
+SIGNAL Net_235 : bit;
 SIGNAL \mux_2:tmp__mux_2_reg\ : bit;
 SIGNAL Net_98 : bit;
 SIGNAL \mux_3:tmp__mux_3_reg\ : bit;
@@ -283,6 +288,7 @@ SIGNAL \I2C_ARD:tmpFB_0__sda_net_0\ : bit;
 TERMINAL \I2C_ARD:tmpSIOVREF__sda_net_0\ : bit;
 SIGNAL tmpFB_0__LED9_net_0 : bit;
 SIGNAL tmpIO_0__LED9_net_0 : bit;
+TERMINAL Net_247 : bit;
 TERMINAL tmpSIOVREF__LED9_net_0 : bit;
 SIGNAL Net_124 : bit;
 SIGNAL Net_123 : bit;
@@ -317,6 +323,16 @@ SIGNAL Net_162 : bit;
 SIGNAL Net_165 : bit;
 SIGNAL Net_166 : bit;
 SIGNAL Net_164 : bit;
+TERMINAL Net_192 : bit;
+TERMINAL Net_193 : bit;
+TERMINAL Net_215 : bit;
+TERMINAL Net_222 : bit;
+TERMINAL Net_227 : bit;
+TERMINAL Net_228 : bit;
+TERMINAL Net_242 : bit;
+TERMINAL Net_244 : bit;
+TERMINAL Net_248 : bit;
+TERMINAL Net_249 : bit;
 SIGNAL cy_tff_1D : bit;
 BEGIN
 
@@ -324,7 +340,7 @@ one <=  ('1') ;
 
 zero <=  ('0') ;
 
-Net_36 <= (not Net_35);
+Net_36 <= (not Net_240);
 
 cy_tff_1D <= (not Net_294);
 
@@ -462,14 +478,14 @@ M1:cy_mxs40_gpio_v1_0
 		pin_mode=>"O",
 		slew_rate=>"0",
 		vtrip=>"0",
-		use_annotation=>"0",
+		use_annotation=>"1",
 		hotswap_needed=>"0")
 	PORT MAP(oe=>(one),
 		y=>Net_137,
 		fb=>(tmpFB_0__M1_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__M1_net_0),
-		annotation=>(open),
+		annotation=>Net_241,
 		siovref=>(tmpSIOVREF__M1_net_0));
 Clock_1:cy_clock_v1_0
 	GENERIC MAP(cy_registers=>"",
@@ -520,14 +536,14 @@ RED_USER_LED2:cy_mxs40_gpio_v1_0
 		pin_mode=>"O",
 		slew_rate=>"0",
 		vtrip=>"0",
-		use_annotation=>"0",
+		use_annotation=>"1",
 		hotswap_needed=>"0")
 	PORT MAP(oe=>(one),
 		y=>Net_21,
 		fb=>(tmpFB_0__RED_USER_LED2_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__RED_USER_LED2_net_0),
-		annotation=>(open),
+		annotation=>Net_220,
 		siovref=>(tmpSIOVREF__RED_USER_LED2_net_0));
 \PWM_RED:TCPWM\:cy_mxs40_tcpwm_v1_0
 	GENERIC MAP(cy_registers=>"",
@@ -676,7 +692,7 @@ SW:cy_mxs40_gpio_v1_0
 		hotswap_needed=>"0")
 	PORT MAP(oe=>(one),
 		y=>(zero),
-		fb=>Net_35,
+		fb=>Net_240,
 		analog=>(open),
 		io=>(tmpIO_0__SW_net_0),
 		annotation=>(open),
@@ -730,14 +746,14 @@ RED:cy_mxs40_gpio_v1_0
 		pin_mode=>"O",
 		slew_rate=>"0",
 		vtrip=>"0",
-		use_annotation=>"0",
+		use_annotation=>"1",
 		hotswap_needed=>"0")
 	PORT MAP(oe=>(one),
 		y=>Net_99,
 		fb=>(tmpFB_0__RED_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__RED_net_0),
-		annotation=>(open),
+		annotation=>Net_195,
 		siovref=>(tmpSIOVREF__RED_net_0));
 GREEN:cy_mxs40_gpio_v1_0
 	GENERIC MAP(cy_registers=>"",
@@ -762,14 +778,14 @@ GREEN:cy_mxs40_gpio_v1_0
 		pin_mode=>"O",
 		slew_rate=>"0",
 		vtrip=>"0",
-		use_annotation=>"0",
+		use_annotation=>"1",
 		hotswap_needed=>"0")
 	PORT MAP(oe=>(one),
 		y=>Net_107,
 		fb=>(tmpFB_0__GREEN_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__GREEN_net_0),
-		annotation=>(open),
+		annotation=>Net_224,
 		siovref=>(tmpSIOVREF__GREEN_net_0));
 M2:cy_mxs40_gpio_v1_0
 	GENERIC MAP(cy_registers=>"",
@@ -794,14 +810,14 @@ M2:cy_mxs40_gpio_v1_0
 		pin_mode=>"O",
 		slew_rate=>"0",
 		vtrip=>"0",
-		use_annotation=>"0",
+		use_annotation=>"1",
 		hotswap_needed=>"0")
 	PORT MAP(oe=>(one),
 		y=>Net_329,
 		fb=>(tmpFB_0__M2_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__M2_net_0),
-		annotation=>(open),
+		annotation=>Net_243,
 		siovref=>(tmpSIOVREF__M2_net_0));
 \PWM_2:TCPWM\:cy_mxs40_tcpwm_v1_0
 	GENERIC MAP(cy_registers=>"",
@@ -1118,12 +1134,12 @@ M2:cy_mxs40_gpio_v1_0
 		reload=>zero,
 		stop=>zero,
 		start=>zero,
-		tr_underflow=>Net_92,
-		tr_compare_match=>Net_93,
-		tr_overflow=>Net_91,
-		line_compl=>Net_96,
+		tr_underflow=>Net_237,
+		tr_compare_match=>Net_238,
+		tr_overflow=>Net_236,
+		line_compl=>Net_239,
 		line=>Net_104,
-		interrupt=>Net_90);
+		interrupt=>Net_235);
 \I2C_ARD:SCB\:cy_mxs40_scb_v1_10
 	GENERIC MAP(cy_registers=>"",
 		requires_io_preconfigure=>'1',
@@ -1251,14 +1267,14 @@ LED9:cy_mxs40_gpio_v1_0
 		pin_mode=>"O",
 		slew_rate=>"0",
 		vtrip=>"0",
-		use_annotation=>"0",
+		use_annotation=>"1",
 		hotswap_needed=>"0")
 	PORT MAP(oe=>(one),
 		y=>(zero),
 		fb=>(tmpFB_0__LED9_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__LED9_net_0),
-		annotation=>(open),
+		annotation=>Net_247,
 		siovref=>(tmpSIOVREF__LED9_net_0));
 \BLE_1:cy_mxs40_ble\:cy_mxs40_ble_v1_0
 	GENERIC MAP(cy_registers=>"",
@@ -1378,6 +1394,76 @@ Clock_3:cy_clock_v1_0
 		is_digital=>'0')
 	PORT MAP(clock_out=>Net_179,
 		dig_domain_out=>open);
+D_1:cy_annotation_universal_v1_0
+	GENERIC MAP(comp_name=>"LED_v1_0",
+		port_names=>"A, K",
+		width=>2)
+	PORT MAP(connect=>(Net_192, Net_193));
+PWR_1:cy_annotation_universal_v1_0
+	GENERIC MAP(comp_name=>"Power_v1_0",
+		port_names=>"T1",
+		width=>1)
+	PORT MAP(connect=>Net_192);
+R_1:cy_annotation_universal_v1_0
+	GENERIC MAP(comp_name=>"Resistor_v1_0",
+		port_names=>"T1, T2",
+		width=>2)
+	PORT MAP(connect=>(Net_195, Net_193));
+D_2:cy_annotation_universal_v1_0
+	GENERIC MAP(comp_name=>"LED_v1_0",
+		port_names=>"A, K",
+		width=>2)
+	PORT MAP(connect=>(Net_215, Net_222));
+PWR_2:cy_annotation_universal_v1_0
+	GENERIC MAP(comp_name=>"Power_v1_0",
+		port_names=>"T1",
+		width=>1)
+	PORT MAP(connect=>Net_215);
+R_2:cy_annotation_universal_v1_0
+	GENERIC MAP(comp_name=>"Resistor_v1_0",
+		port_names=>"T1, T2",
+		width=>2)
+	PORT MAP(connect=>(Net_222, Net_220));
+D_3:cy_annotation_universal_v1_0
+	GENERIC MAP(comp_name=>"LED_v1_0",
+		port_names=>"A, K",
+		width=>2)
+	PORT MAP(connect=>(Net_227, Net_228));
+PWR_3:cy_annotation_universal_v1_0
+	GENERIC MAP(comp_name=>"Power_v1_0",
+		port_names=>"T1",
+		width=>1)
+	PORT MAP(connect=>Net_227);
+R_3:cy_annotation_universal_v1_0
+	GENERIC MAP(comp_name=>"Resistor_v1_0",
+		port_names=>"T1, T2",
+		width=>2)
+	PORT MAP(connect=>(Net_224, Net_228));
+M_1:cy_annotation_universal_v1_0
+	GENERIC MAP(comp_name=>"Motor_v1_0",
+		port_names=>"T1, T2",
+		width=>2)
+	PORT MAP(connect=>(Net_241, Net_242));
+M_2:cy_annotation_universal_v1_0
+	GENERIC MAP(comp_name=>"Motor_v1_0",
+		port_names=>"T1, T2",
+		width=>2)
+	PORT MAP(connect=>(Net_243, Net_244));
+D_4:cy_annotation_universal_v1_0
+	GENERIC MAP(comp_name=>"LED_v1_0",
+		port_names=>"A, K",
+		width=>2)
+	PORT MAP(connect=>(Net_248, Net_249));
+PWR_4:cy_annotation_universal_v1_0
+	GENERIC MAP(comp_name=>"Power_v1_0",
+		port_names=>"T1",
+		width=>1)
+	PORT MAP(connect=>Net_248);
+R_4:cy_annotation_universal_v1_0
+	GENERIC MAP(comp_name=>"Resistor_v1_0",
+		port_names=>"T1, T2",
+		width=>2)
+	PORT MAP(connect=>(Net_247, Net_249));
 cy_tff_1:cy_dff
 	PORT MAP(d=>cy_tff_1D,
 		clk=>Net_36,

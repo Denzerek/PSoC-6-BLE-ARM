@@ -11,16 +11,17 @@
 </CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
 </dataGuid>
 <dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
-<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Datasheet">
 <TreeKeys>
 <v>Source</v>
 <v>Components</v>
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="BT_Central_Remote-000\BT_Central_Remote">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="BT_Central_Remote-000\BT_Central_Remote\CM0p (Core 0)">
 <ExpandedNodeIds>
 <v>BT_Central_Remote-000</v>
+<v>BT_Central_Remote-000\BT_Central_Remote</v>
 <v>BT_Central_Remote-000\BT_Central_Remote\TopDesign</v>
 <v>BT_Central_Remote-000\BT_Central_Remote\BT_Central_Remote.cydwr</v>
 <v>BT_Central_Remote-000\BT_Central_Remote\BT_Central_Remote.cydwr\Pins</v>
@@ -87,26 +88,18 @@
 <v>BT_Central_Remote-000\BT_Central_Remote\Generated_Source</v>
 <v>BT_Central_Remote-000\BT_Central_Remote\Generated_Source\PSoC6</v>
 </ExpandedNodeIds>
-<VisibleNodeIds>
-<v>BT_Central_Remote-000</v>
-<v>BT_Central_Remote-000\BT_Central_Remote</v>
-</VisibleNodeIds>
+<VisibleNodeIds />
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="BT_Central_Remote-000">
 <ExpandedNodeIds>
 <v>BT_Central_Remote-000</v>
 <v>BT_Central_Remote-000\BT_Central_Remote</v>
 <v>BT_Central_Remote-000\BT_Central_Remote\TopDesign</v>
 <v>BT_Central_Remote-000\BT_Central_Remote\TopDesign\TopDesign.cysch</v>
 </ExpandedNodeIds>
-<VisibleNodeIds>
-<v>BT_Central_Remote-000</v>
-<v>BT_Central_Remote-000\BT_Central_Remote</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\TopDesign</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\TopDesign\TopDesign.cysch</v>
-</VisibleNodeIds>
+<VisibleNodeIds />
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="BT_Central_Remote-000">
 <ExpandedNodeIds>
 <v>BT_Central_Remote-000</v>
 <v>BT_Central_Remote-000\BT_Central_Remote</v>
@@ -317,45 +310,14 @@
 <v>BT_Central_Remote-000\BT_Central_Remote\BT_Central_Remote.rpt</v>
 <v>BT_Central_Remote-000\BT_Central_Remote\BT_Central_Remote_timing.html</v>
 </ExpandedNodeIds>
-<VisibleNodeIds>
-<v>BT_Central_Remote-000</v>
-<v>BT_Central_Remote-000\BT_Central_Remote</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\BLE.lst</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\BLE_config.lst</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\BLE_custom_config.lst</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_Centroid_LL.lst</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_Control.lst</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_Filter.lst</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_INT.lst</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_Processing.lst</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_Sensing.lst</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_SensingCSD_LL.lst</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_SensingCSX_LL.lst</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_Structure.lst</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\CapSense_Tuner.lst</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble.lst</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_aios.lst</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_ancs.lst</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_ans.lst</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_bas.lst</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_bcs.lst</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_bls.lst</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_bms.lst</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_bts.lst</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_cgms.lst</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CortexM0p\ARM_GCC_541\Debug\Listing Files\cy_ble_clk.lst</v>
-</VisibleNodeIds>
+<VisibleNodeIds />
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
 <TreeKeysV2>
 <v>Datasheet</v>
 </TreeKeysV2>
 <TreeStatesV2>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="BT_Central_Remote-000\BT_Central_Remote">
 <ExpandedNodeIds>
 <v>BT_Central_Remote-000</v>
 <v>BT_Central_Remote-000\BT_Central_Remote</v>
@@ -370,20 +332,7 @@
 <v>BT_Central_Remote-000\BT_Central_Remote\SCB_I2C_PDL_v2_0.pdf</v>
 <v>BT_Central_Remote-000\BT_Central_Remote\SCB_UART_PDL_v2_0.pdf</v>
 </ExpandedNodeIds>
-<VisibleNodeIds>
-<v>BT_Central_Remote-000</v>
-<v>BT_Central_Remote-000\BT_Central_Remote</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\PSoC 6 Architecture TRM</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\PSoC 63 Family Datasheet</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\Peripheral Driver Library</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\System Reference Guides</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\BLE_PDL_v2_20.pdf</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\CapSense_v3_0.pdf</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\GPIO_PDL_v1_0</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\GPIO_PDL_v1_0\GPIO_PDL_v1_0.pdf</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\SCB_I2C_PDL_v2_0.pdf</v>
-<v>BT_Central_Remote-000\BT_Central_Remote\SCB_UART_PDL_v2_0.pdf</v>
-</VisibleNodeIds>
+<VisibleNodeIds />
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
 </CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
@@ -391,14 +340,22 @@
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
-<OpenDocs />
+<OpenDocs>
+<name v=".\Src\uart_task.h" />
+<name v=".\Src\uart_task.c" />
+<name v=".\Src\main_cm4.c" />
+<name v=".\Generated_Source\PSoC6\cyfitter_sysint_cfg.h" />
+<name v=".\Src\common.h" />
+<name v=".\Src\ble_task.h" />
+<name v=".\BT_Central_Remote.cydwr" />
+</OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
   Actipro Docking/MDI for WinForms
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="948, 595" SelectedTabbedMdiWindow="03a3c053-f83a-4e52-80fe-5c69f4f00d6c"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="ed9336ec-60ed-40c8-8473-b06c5b92c52c" /><ToolWindow Key="Output Window Plugin:7305390e-eabe-4963-b21f-3a0f11b4b1d5:Output Window" Guid="73de7761-3dbb-47a0-9a93-9d6338c3a45f" /><ToolWindow Key="CyNoticeWindow:44d3d453-9474-4f2b-b928-4356f496bef0:Notice Window" Guid="03a3c053-f83a-4e52-80fe-5c69f4f00d6c" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="948, 595" SelectedTabbedMdiWindow="73de7761-3dbb-47a0-9a93-9d6338c3a45f"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="ed9336ec-60ed-40c8-8473-b06c5b92c52c" /><ToolWindow Key="Output Window Plugin:7305390e-eabe-4963-b21f-3a0f11b4b1d5:Output Window" Guid="73de7761-3dbb-47a0-9a93-9d6338c3a45f" /><ToolWindow Key="CyNoticeWindow:44d3d453-9474-4f2b-b928-4356f496bef0:Notice Window" Guid="03a3c053-f83a-4e52-80fe-5c69f4f00d6c" /><DocumentWindow Key="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Central_Remote.cydsn\Src\uart_task.h" Guid="aeb1de74-de27-4b11-be83-d7b5da35447c" /><DocumentWindow Key="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Central_Remote.cydsn\Src\uart_task.c" Guid="69dde89b-64c9-4e7d-a584-feefd068a7c4" /><DocumentWindow Key="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Central_Remote.cydsn\Src\main_cm4.c" Guid="5ce409fb-e12f-4cd5-821d-9415c32cc42f" /><DocumentWindow Key="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Central_Remote.cydsn\Generated_Source\PSoC6\cyfitter_sysint_cfg.h" Guid="caaf85bc-14f3-4726-a4ec-cecb3a02d921" /><DocumentWindow Key="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Central_Remote.cydsn\Src\common.h" Guid="ebee6ca8-eae1-4d38-acb9-de399e3367ae" /><DocumentWindow Key="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Central_Remote.cydsn\Src\ble_task.h" Guid="ed425491-cf09-442b-adb9-75df33b88717" /><DocumentWindow Key="C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Central_Remote.cydsn\BT_Central_Remote.cydwr" Guid="67bbfcc6-faa1-4a73-a306-751c1d1b0377" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

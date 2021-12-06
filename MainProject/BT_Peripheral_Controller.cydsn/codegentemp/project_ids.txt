@@ -1,8 +1,9 @@
-C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Peripheral_Controller.cydsn\BT_Peripheral_Controller.cyprj|fe6356f0-e73b-4fad-b62d-323c1b25d0df
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|fdce0478-cf14-4be0-bdd9-49a707c2bc39
-C:\Users\Austina\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|1234f557-a963-4201-ba57-3de2415682d8
-C:\Users\Austina\Documents\PSoC Creator\4.3\Downloads ( 4.3).cylib\Downloads ( 4.3).cyprj|dc6e420b-df4b-4dda-b7b8-02e0461a778a
-C:\Users\Austina\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|ae6da5eb-2cb5-47ae-bdd9-6754be414bf3
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|031c572c-d021-478b-b371-29768cf55c23
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|a01c35f8-1a23-473e-bcc0-05c405fb19db
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|012244c8-9b37-4890-83b1-736fb19aeb43
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|e0759229-1012-4ea5-89f9-45e1a5d9a7df
+C:\Users\Austina\Documents\PSoC Creator\4.3\Downloads ( 4.3).cylib\Downloads ( 4.3).cyprj|b5985932-8acf-43cc-bdd3-443b4a0b8d1a
+C:\Users\Austina\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|42bb9b97-a43c-48b5-bc5c-259c0de398ae
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|7c7a8d30-3921-47bd-b73c-90c81308a8b3
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|f7f71b0c-8005-485a-aafb-9dc62acb4d27
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|f17ab45d-3cb9-4b69-a586-9c2f56a43f85
+C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Peripheral_Controller.cydsn\Design01.cydsn\Design01.cyprj|60a1a8bf-cbc5-4bb0-8d2c-3660e911acde
+C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Central_Remote.cydsn\BT_Central_Remote.cyprj|cc383523-f9bd-4be1-be5c-8cbfebbbfe34
+C:\Alen\GitHub_Denzerek\PSoC-6-BLE-ARM\MainProject\BT_Peripheral_Controller.cydsn\BT_Peripheral_Controller.cyprj|af37443a-195b-42fd-af68-aa3c474125b6

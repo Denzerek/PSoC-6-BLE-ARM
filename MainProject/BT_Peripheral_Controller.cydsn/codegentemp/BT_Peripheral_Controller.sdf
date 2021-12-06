@@ -1,10 +1,10 @@
 (DELAYFILE
  (SDFVERSION "IEEE 1497 4.0")
- (DATE "2021-10-31T13:29:42Z")
+ (DATE "2021-12-06T08:10:29Z")
  (DESIGN "BT_Peripheral_Controller")
  (VENDOR "Cypress Semiconductor")
  (PROGRAM "PSoC Creator")
- (VERSION " 4.4")
+ (VERSION " 4.3")
  (DIVIDER .)
  (TIMESCALE 1 ns)
  (CELL
@@ -40,6 +40,7 @@
     (INTERCONNECT ClockBlock.ff_div_15 \\PWM_3\:TCPWM\\.clock (0.000:0.000:0.000))
     (INTERCONNECT ClockBlock.ff_div_13 \\PWM_4\:TCPWM\\.clock (0.000:0.000:0.000))
     (INTERCONNECT \\PWM_RED\:TCPWM\\.line RED_USER_LED2\(0\).pin_input (13.869:16.136:16.136))
+    (INTERCONNECT SW\(0\).fb Net_294.clock_0 (5.267:6.803:6.803))
     (INTERCONNECT Net_294.q Net_107.main_0 (0.740:1.059:1.059))
     (INTERCONNECT Net_294.q Net_99.main_0 (0.740:1.059:1.059))
     (INTERCONNECT Net_294.q \\PWM_1\:TCPWM\\.start (2.834:4.134:4.134))
@@ -49,7 +50,6 @@
     (INTERCONNECT \\PWM_2\:TCPWM\\.line M2\(0\).pin_input (0.000:0.000:0.000))
     (INTERCONNECT \\EZI2C\:scl\(0\)\\.fb \\EZI2C\:SCB\\.i2c_scl (0.000:0.000:0.000))
     (INTERCONNECT \\EZI2C\:sda\(0\)\\.fb \\EZI2C\:SCB\\.i2c_sda (0.000:0.000:0.000))
-    (INTERCONNECT SW\(0\).fb Net_294.clock_0 (5.267:6.803:6.803))
     (INTERCONNECT ClockBlock.ff_div_11 \\LEDBlink\:TCPWM\\.clock (0.000:0.000:0.000))
     (INTERCONNECT Net_99.q RED\(0\).pin_input (7.307:8.847:8.847))
     (INTERCONNECT RED\(0\).pad_out RED\(0\).pad_in (0.000:0.000:0.000))
