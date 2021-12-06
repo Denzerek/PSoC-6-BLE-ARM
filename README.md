@@ -2,6 +2,7 @@
 PSoC 6 based Servo Arm Controlled By Capsense and BMI160 Motion sensor over BLE using FreeRTOS
 Please See the Demo Video 'BLEControlledARM-DemoVideo.mp4' for functional demo.
 
+https://user-images.githubusercontent.com/91179380/144823336-05be9443-6186-445b-ad9b-4fbb32c35d19.mp4
 
 # Brief
 This project mainly involves 3 sets of firmware for its operation.
