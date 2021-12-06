@@ -18,14 +18,40 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="BT_Peripheral_Controller-000\BT_Central_Remote">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)">
 <ExpandedNodeIds>
 <v>BT_Peripheral_Controller-000</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>BT_Peripheral_Controller-000</v>
 <v>BT_Peripheral_Controller-000\BT_Central_Remote</v>
 <v>BT_Peripheral_Controller-000\BT_Peripheral_Controller</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\TopDesign</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\BT_Peripheral_Controller.cydwr</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM0p (Core 0)</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\ARM GCC Generic</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\ARM IAR Generic</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\ARM MDK Generic</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Header Files</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\ARM GCC Generic</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\ARM IAR Generic</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\ARM MDK Generic</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\ble_task.c</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\capsense_task.c</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\ezI2C_task.c</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\main_cm4.c</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\motor_task.c</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\pwm_task.c</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\servo_slave_i2c_task.c</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\system_psoc6_cm4.c</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\CM4 (Core 1)\Source Files\uart_task.c</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\Shared Files</v>
+<v>BT_Peripheral_Controller-000\BT_Peripheral_Controller\Generated_Source</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
